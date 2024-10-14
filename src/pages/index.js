@@ -5,7 +5,6 @@ import GettingCards from "@/components/GettingCards";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import About from "@/components/navpages/About";
 import Link from "next/link";
 // import localFont from "next/font/local";
 
