@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import Link from "next/link";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 export const Navbar = () => {
   return (
@@ -65,8 +68,8 @@ export const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-2xl text-white ">
-                  About
+              <a href="about" className="block py-2 px-3 text-2xl text-white">
+                 About
                 </a>
               </li>
               <li>
@@ -83,6 +86,9 @@ export const Navbar = () => {
                 <a href="#" className="block py-2 px-3 text-2xl text-white">
                   Contact
                 </a>
+              </li>
+              <li >
+                <ConnectWallet />
               </li>
             </ul>
           </div>

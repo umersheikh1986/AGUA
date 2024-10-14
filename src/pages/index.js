@@ -5,6 +5,8 @@ import GettingCards from "@/components/GettingCards";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import About from "@/components/navpages/About";
+import Link from "next/link";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -27,6 +29,7 @@ export default function Home() {
         // }}
         className="bg-[url('/bgs.png')] spark-animation bg-black  "
       >
+      <Link href='navpages'>Click</Link>
         <Navbar />
         <HeroSection />
         <ThreeCard />
@@ -44,6 +47,8 @@ export default function Home() {
         <GettingCards />
         <Footer />
       </main>
+
+      
     </>
   );
 }
