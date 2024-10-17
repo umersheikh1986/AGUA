@@ -2,12 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import HeroSlider from "./swiper/HeroSlider";
+import CanvasScene from "./Animate";
 
 export const HeroSection = () => {
   return (
+    <>
+    {/* <CanvasScene /> */}
+
     <div className="grid  grid-cols-1 md:grid-cols-2 h-[550px]">
+    <CanvasScene />
       {/* Text Section */}
-      <div className="flex-1 flex flex-col justify-center  rounded-lg  p-5">
+      <div className="flex-1 ml-20 flex flex-col justify-center z-10  rounded-lg  p-5">
         <h2 className="text-6xl text-white font-bold mb-2">
           A STABLE SILVER &
         </h2>
@@ -22,7 +27,7 @@ export const HeroSection = () => {
           since the 1500s,
         </p>
 
-        <div className="mt-5 flex gap-4">
+        <div className="mt-5 flex flex-wrap md:flex-nowrap gap-4">
           <Link
             href={"/"}
             className="border-2 px-20 py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer"
@@ -34,14 +39,14 @@ export const HeroSection = () => {
             className=" border-2 border-white bg-gradient-to-r from-[#353535]  via-[#CBCDCF] via-30% to-[#6C6C6C]
             to-70% bg-blend-multiply px-20 py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
           >
-            {" "}
+            {/* {" "} */}
             CREATE CARDS
           </Link>
         </div>
       </div>
 
       {/* Image Section */}
-      <div className="relative flex justify-center items-center">
+      <div className="relative flex justify-center z-10 items-center">
         <div className="relative w-full h-full flex justify-center items-center">
           {/* <img
             src="/gold.png"
@@ -52,5 +57,6 @@ export const HeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };

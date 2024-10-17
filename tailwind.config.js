@@ -7,6 +7,38 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        appear: {
+          '0%': {
+            opacity: '0',
+            transform: 'scale(0.5)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'scale(1)',
+          },
+        },
+      },
+      animation: {
+        appear: 'appear 1s linear', // 1s duration, linear timing
+      },
+      keyframes: {
+        slideLeft: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        slideLeft: 'slideLeft 0.5s ease-out',
+      },
+      colors: {
+        customBrown: '#25200F',
+        customgray: '#524621',
+        tiltcard: '#1A1A1A',
+      },
+      fontFamily: {
+        times: ['"Times New Roman"', 'serif'],
+      },
       backgroundImage: {
         spark: "url('/bgs.png')",
       },
@@ -21,5 +53,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };

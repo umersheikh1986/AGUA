@@ -5,7 +5,11 @@ import GettingCards from "@/components/GettingCards";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Youtube } from "@/components/Youtube";
+import Members from "@/components/Members";
+import Followus from "@/components/Followus";
 import Link from "next/link";
+import Chart from "@/components/Chart";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -26,12 +30,21 @@ export default function Home() {
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
-        className="bg-[url('/bgs.png')] spark-animation bg-black  "
+        className="bg-[url('/bgs.png')]  bg-black  "
+          
       >
-      <Link href='navpages'>Click</Link>
         <Navbar />
         <HeroSection />
         <ThreeCard />
+    
+      </main>
+      <main className="bg-[url('/bgGold.png')] p-6  bg-black bg-cover">
+
+      <Youtube />
+        <Chart />
+        <Members />
+        <Followus />
+        
       </main>
       <main
         // style={{

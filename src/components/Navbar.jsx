@@ -13,16 +13,16 @@ export const Navbar = () => {
         //   backgroundAttachment:
         //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
         // }}
-        className=" border-gray-20"
+        className=" border-customgray border-2"
       >
-        <div className=" grid md:grid-cols-3  text-white items-center justify-between mx-auto p-8 ">
+        <div className=" grid md:grid-cols-3 text-white items-center justify-between mx-auto p-0 ">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
               src="/agua-logo.png"
-              className="h-24 w-24 me-2"
+              className="h-24 w-24 me-2 ml-12"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

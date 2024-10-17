@@ -5,7 +5,7 @@ import { TiCameraOutline } from "react-icons/ti";
 import { GoCreditCard } from "react-icons/go";
 export default function GettingCards() {
   return (
-    <div className="mx-auto mt-40 py-40">
+    <div className="mx-auto py-40">
       <div className="place-items-center text-white flex justify-center">
         <h2 className="text-3xl">HOW TO GET OUR CARDS</h2>
       </div>
