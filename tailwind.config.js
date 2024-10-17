@@ -33,8 +33,9 @@ module.exports = {
       },
       colors: {
         customBrown: '#25200F',
-        customgray: '#524621',
+        customgold: '#524621',
         tiltcard: '#1A1A1A',
+        lightgold: '#D2BA57'
       },
       fontFamily: {
         times: ['"Times New Roman"', 'serif'],

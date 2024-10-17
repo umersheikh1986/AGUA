@@ -2,6 +2,7 @@ import React from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
 import { useEffect,useState,useRef } from 'react';
+import CanvasScene from './Animate';
 
 const Members = () => {
   const blockRef = useRef(null);

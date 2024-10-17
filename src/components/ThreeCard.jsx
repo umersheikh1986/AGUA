@@ -18,6 +18,7 @@ export const ThreeCard = () => {
   // }, []);
 
   return (
+    <>
     <div className="mx-auto  mt-60  py-20">
       <div className="grid grid-cols-1 md:grid-cols-3 w-full h-[450px] mb-20 ">
         <div className="flex items-center justify-center">
@@ -97,5 +98,7 @@ export const ThreeCard = () => {
         </div>
       </div>
     </div>
+    <hr className="border-[#D2BA57]"/>
+    </>
   );
 };

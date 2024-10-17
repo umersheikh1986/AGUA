@@ -13,7 +13,7 @@ export const Navbar = () => {
         //   backgroundAttachment:
         //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
         // }}
-        className=" border-customgray border-2"
+        className=" border-b-lightgold border-x-black border-t-black border-2"
       >
         <div className=" grid md:grid-cols-3 text-white items-center justify-between mx-auto p-0 ">
           <a
@@ -25,7 +25,7 @@ export const Navbar = () => {
               className="h-24 w-24 me-2 ml-12"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-lightgold">
               AGUA
             </span>
           </a>
@@ -61,34 +61,34 @@ export const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-2xl text-white "
+                  className="block py-2 px-3 text-2xl text-lightgold "
                   aria-current="page"
                 >
                   Home
                 </a>
               </li>
               <li>
-              <a href="about" className="block py-2 px-3 text-2xl text-white">
+              <a href="about" className="block py-2 px-3 text-2xl text-lightgold">
                  About
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-2xl text-white">
+                <a href="#" className="block py-2 px-3 text-2xl text-lightgold">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-2xl text-white ">
+                <a href="#" className="block py-2 px-3 text-2xl text-lightgold ">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-2xl text-white">
+                <a href="#" className="block py-2 px-3 text-2xl text-lightgold">
                   Contact
                 </a>
               </li>
               <li >
-                <ConnectWallet />
+                <ConnectWallet style={{backgroundColor:'#E5AF1D',fontWeight:'bold',paddingLeft:'10px'}} />
               </li>
             </ul>
           </div>
