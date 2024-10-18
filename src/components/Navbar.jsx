@@ -88,7 +88,7 @@ export const Navbar = () => {
                 </a>
               </li>
               <li >
-                <ConnectWallet style={{backgroundColor:'#E5AF1D',fontWeight:'bold',paddingLeft:'10px'}} />
+                <ConnectWallet style={{backgroundColor:'#E5AF1D',fontWeight:'bold',paddingLeft:'7px',border:'2px solid #534721',borderRadius:'20px'}} />
               </li>
             </ul>
           </div>
