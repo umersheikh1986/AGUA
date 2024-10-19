@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Youtube } from "@/components/Youtube";
 import Members from "@/components/Members";
 import Followus from "@/components/Followus";
+import CanvasScene from "@/components/Animate";
 import Link from "next/link";
 import Chart from "@/components/Chart";
 // import localFont from "next/font/local";
@@ -27,18 +28,53 @@ export default function Home() {
   return (
     <>
       <main
+      className="gradient-animation"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
-        className="bg-[url('/bgs.png')]  bg-black  "
-          
+        //style={{ background: 'linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%)' }}
+        //style={{ background: 'linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%)' }} 
       >
+        <style jsx>{`
+  .gradient-animation {
+    animation: gradientChange 2s infinite;
+  }
+
+  @keyframes gradientChange {
+    0% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    50% {
+      background: linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    100% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+  }
+`}</style>
         <Navbar />
         <HeroSection />
         <ThreeCard />
     
       </main>
-      <main className="bg-[url('/bgGold.png')] p-6  bg-black bg-cover">
+      <main className="gradient-animation">
+      <style jsx>{`
+  .gradient-animation {
+    animation: gradientChange 2s infinite;
+  }
+
+  @keyframes gradientChange {
+    0% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    50% {
+      background: linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    100% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+  }
+`}</style>
 
       <Youtube />
         <Chart />
@@ -53,8 +89,25 @@ export default function Home() {
         //   backgroundAttachment:
         //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
         // }}
-        className="bg-[url('/bgGold.png')] p-6  bg-black bg-cover "
+        className="gradient-animation"
       >
+          <style jsx>{`
+  .gradient-animation {
+    animation: gradientChange 2s infinite;
+  }
+
+  @keyframes gradientChange {
+    0% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    50% {
+      background: linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%);
+    }
+    100% {
+      background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
+    }
+  }
+`}</style>
         <ProfitAbleLoan />
         <GettingCards />
         <Footer />
@@ -164,3 +217,4 @@ export default function Home() {
   </footer>
 </div> */
 }
+// bg-[url('/bgs.png')]

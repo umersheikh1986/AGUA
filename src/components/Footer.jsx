@@ -1,4 +1,5 @@
 import React from "react";
+import CanvasScene from "./Animate";
 
 export const Footer = () => {
   return (

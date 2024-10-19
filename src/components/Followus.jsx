@@ -6,8 +6,35 @@ import { RiTelegramLine } from "react-icons/ri";
 import { FaInstagramSquare } from "react-icons/fa";
 import { BiLogoMediumOld } from "react-icons/bi";
 import Link from 'next/link';
+import { useEffect,useRef } from 'react';
+import CanvasScene from './Animate';
 
 const Followus = () => {
+  const divRes = useRef(null);
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideInLeft");
+        }
+      });
+    },
+    {
+      threshold: 0.1, 
+    }
+  );
+
+  if (divRes.current) {
+    observer.observe(divRes.current);
+  }
+
+  return () => {
+    if (divRes.current) {
+      observer.unobserve(divRes.current);
+    }
+  };
+}, []);
   return (
     <>
     {/* <div className='text-center text-white text-4xl h-0 font-times mt-28 font-extrabold'>
@@ -32,8 +59,8 @@ const Followus = () => {
   </button>
 </div> */}
 
-<div className='bg-customgray mt-20 rounded-[10px]  '>
-
+<div ref={divRes} className='bg-customgray mt-20 rounded-[10px]  '>
+<CanvasScene />
 <div className="text-center text-white text-2xl md:text-4xl pt-10 font-times font-extrabold">
   Stay tuned with our latest project<br /> updates or follow us on any of the social<br /> media channels below
 </div>

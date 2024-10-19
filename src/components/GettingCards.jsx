@@ -1,18 +1,72 @@
 import React from "react";
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { TiCameraOutline } from "react-icons/ti";
+import { useEffect,useRef } from "react";
 
 import { GoCreditCard } from "react-icons/go";
 export default function GettingCards() {
+  const divRef = useRef(null);
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slideInRight");
+          }
+        });
+      },
+      {
+        threshold: 0.1, 
+      }
+    );
+
+    if (divRef.current) {
+      observer.observe(divRef.current);
+    }
+
+    return () => {
+      if (divRef.current) {
+        observer.unobserve(divRef.current);
+      }
+    };
+  }, []);
+
+  const divRes = useRef(null);
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideInLeft");
+        }
+      });
+    },
+    {
+      threshold: 0.1, 
+    }
+  );
+
+  if (divRes.current) {
+    observer.observe(divRes.current);
+  }
+
+  return () => {
+    if (divRes.current) {
+      observer.unobserve(divRes.current);
+    }
+  };
+}, []);
+
+
   return (
     <div className="mx-auto py-40">
       <div className="place-items-center text-white flex justify-center">
-        <h2 className="text-3xl">HOW TO GET OUR CARDS</h2>
+        <h2 className="text-3xl text-center">HOW TO GET OUR CARDS</h2>
       </div>
 
       <div className="grid grid-cols-1 mt-16 md:grid-cols-3 gap-6">
         {/* First Card */}
-        <div className="flex mt-6 items-center justify-center">
+        <div ref={divRes} className="flex mt-6 items-center justify-center">
           <div className="rounded-lg p-6 flex flex-col items-center">
             <div className="text-white mb-4">
               <FaRegArrowAltCircleDown className="text-white w-12 h-12" />
@@ -52,7 +106,7 @@ export default function GettingCards() {
         </div>
 
         {/* Third Card */}
-        <div className="flex mt-6 items-center justify-center">
+        <div ref={divRef} className="flex mt-6 items-center justify-center">
           <div className="rounded-lg p-6 flex flex-col items-center">
             <div className="text-white mb-4">
               <GoCreditCard className="text-white w-12 h-12" />

@@ -11,11 +11,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {/* <Navbar /> */}
+      <div>
        < ThirdwebProvider
        clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
        activeChain={ activeChain }>
       <Component {...pageProps} />;
       </ ThirdwebProvider>
+      </div>
       {/* <Footer /> */}
     </>
   );

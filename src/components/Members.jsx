@@ -3,6 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
 import { useEffect,useState,useRef } from 'react';
 import CanvasScene from './Animate';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Members = () => {
   const blockRef = useRef(null);
@@ -29,16 +30,17 @@ const Members = () => {
   return (
     <>
     <div>
+      <CanvasScene />
         <p className='text-center text-gray-300 font-bold mt-10 font-times '>OUR AMAZING</p>
         <p className='text-center text-white text-4xl font-times font-extrabold'>Team Of Experts</p>
     </div>
-    <div ref={blockRef} className={`flex flex-wrap justify-center gap-8 mt-10${isVisible ? 'animate-appear' : 'opacity-0'}`} >
-            <div className="bg-customgray card w-96 shadow-xl ">
+    <div ref={blockRef} className={`flex flex-wrap justify-center gap-20 mt-8 ${isVisible ? 'animate-appear' : 'opacity-0'}`} >
+            <div className="bg-[#493E1D] card w-96 shadow-xl ">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/04/martin-photo2.jpg"
       alt="Shoes"
-      className="rounded-xl h-[350px]" />
+      className="rounded-xl h-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Martin Mobarak</b></h2>
@@ -47,12 +49,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-customgray  w-96 shadow-xl">
+<div className="card bg-[#493E1D]  w-96 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/oscar-photo-e1616786798745.jpg"
       alt="Shoes"
-      className="rounded-xl h-[350px]" />
+      className="rounded-xl h-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Oscar Jarquin</b></h2>
@@ -61,12 +63,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-customgray w-96 shadow-xl">
+<div className="card bg-[#493E1D] w-96 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/omar-e1616787014904.jpg"
       alt="Shoes"
-      className="rounded-xl h-[350px]" />
+      className="rounded-xl h-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Omar Mobarak</b></h2>
@@ -75,12 +77,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-customgray w-96 shadow-xl">
+<div className="card bg-[#493E1D] w-96 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/bryan-photo-e1616786841161.jpg"
       alt="Shoes"
-      className="rounded-xl h-[350px]" />
+      className="rounded-xl h-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Bryan Cohen</b></h2>
@@ -88,19 +90,18 @@ const Members = () => {
 
   </div>
 </div>
-
-<div className="card bg-customgray w-96 shadow-xl">
+<div className="card bg-[#493E1D] w-96 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/Hans.jpg"
       alt="Shoes"
-      className="rounded-xl h-[350px]" />
+      className="rounded-xl h-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Hans Kuhn</b></h2>
     <p className='text-white'><b>Legal Avisor</b></p>
   </div>
-</div>
+</div> 
     </div>
     </>
   )

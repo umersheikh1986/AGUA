@@ -809,11 +809,81 @@
 // export default CanvasScene;
 
 
+// import { useEffect, useRef } from 'react';
+// import * as THREE from 'three';
+
+// const CanvasScene = () => {
+//   const canvasRef = useRef();
+
+//   useEffect(() => {
+//     // Set up the scene, camera, and renderer
+//     const scene = new THREE.Scene();
+//     const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
+//     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
+
+//     renderer.setSize(window.innerWidth, window.innerHeight);
+//     camera.position.z = 15;
+
+//     // Spark particles setup
+//     const sparkCount = 500;
+//     const sparkGeometry = new THREE.BufferGeometry();
+//     const sparkPositions = new Float32Array(sparkCount * 3);
+
+//     for (let i = 0; i < sparkCount; i++) {
+//       sparkPositions[i * 3] = (Math.random() - 0.5) * 30; // x
+//       sparkPositions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+//       sparkPositions[i * 3 + 2] = (Math.random() - 0.5) * 20; // z
+//     }
+
+//     sparkGeometry.setAttribute('position', new THREE.BufferAttribute(sparkPositions, 3));
+//     const sparkMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.1 });
+//     const sparks = new THREE.Points(sparkGeometry, sparkMaterial);
+//     scene.add(sparks);
+
+//     const clock = new THREE.Clock();
+
+//     const animate = function () {
+//       requestAnimationFrame(animate);
+//       const time = clock.getElapsedTime();
+
+//       // Animate sparks: make them flicker or move slightly
+//       const sparkPositions = sparkGeometry.attributes.position.array;
+//       for (let i = 0; i < sparkCount; i++) {
+//         // Make sparks move up and reset after they go too far up
+//         sparkPositions[i * 3 + 1] += 0.02 * Math.sin(time * 5 + i); // slight vertical motion
+//         if (sparkPositions[i * 3 + 1] > 10) {
+//           sparkPositions[i * 3 + 1] = -10; // Reset if spark goes too high
+//         }
+//       }
+
+//       sparkGeometry.attributes.position.needsUpdate = true;
+
+//       renderer.render(scene, camera);
+//     };
+
+//     animate();
+
+//     const handleResize = () => {
+//       camera.aspect = window.innerWidth / window.innerHeight;
+//       camera.updateProjectionMatrix();
+//       renderer.setSize(window.innerWidth, window.innerHeight);
+//     };
+
+//     window.addEventListener('resize', handleResize);
+
+//     return () => {
+//       window.removeEventListener('resize', handleResize);
+//     };
+//   }, []);
+
+//   return <canvas ref={canvasRef} className="absolute bg-transparent z-3 " />;
+// };
+
+// export default CanvasScene;
+
 
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 
 const CanvasScene = () => {
   const canvasRef = useRef();
@@ -821,72 +891,15 @@ const CanvasScene = () => {
   useEffect(() => {
     // Set up the scene, camera, and renderer
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color('#373016'); // Set background color to #373016
+
     const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.position.z = 15;
 
-    // Load font for text (dollar sign)
-    const fontLoader = new FontLoader();
-
-    // Bitcoin-like coin geometry (cylinder)
-    const coinGeometry = new THREE.CylinderGeometry(0.5, 0.5, 0.1, 32); // 0.5 radius, 0.1 thickness, 32 segments
-    const coinMaterial = new THREE.MeshBasicMaterial({ color: 0xFFD700 }); // Golden color
-
-    const coins = [];
-    const coinTexts = [];
-
-    // Create coins with dollar signs on both sides
-    fontLoader.load('https://threejs.org/examples/fonts/helvetiker_bold.typeface.json', (font) => {
-      for (let i = 0; i < 100; i++) {
-        const coin = new THREE.Mesh(coinGeometry, coinMaterial.clone());
-
-        // Random position for each coin
-        coin.position.x = (Math.random() - 0.5) * 20;
-        coin.position.y = (Math.random() - 0.5) * 20;
-        coin.position.z = (Math.random() - 0.5) * 10;
-
-        // Random rotation for each coin
-        coin.rotation.x = Math.random() * Math.PI;
-        coin.rotation.y = Math.random() * Math.PI;
-
-        scene.add(coin);
-        coins.push(coin);
-
-        // Create $ sign text geometry for both sides
-        const textGeometryFront = new TextGeometry('$', {
-          font: font,
-          size: 0.3, // Size of the text
-          height: 0.05, // Depth of the text (how thick the text is)
-        });
-
-        const textGeometryBack = new TextGeometry('$', {
-          font: font,
-          size: 0.3,
-          height: 0.05,
-        });
-
-        const textMaterial = new THREE.MeshBasicMaterial({ color: 0xFFFFFF }); // White color for the $ sign
-
-        const coinTextFront = new THREE.Mesh(textGeometryFront, textMaterial);
-        const coinTextBack = new THREE.Mesh(textGeometryBack, textMaterial);
-
-        // Align the text with the coin surface on the front side
-        coinTextFront.position.set(0, 0, 0.06); // Slightly offset from the front surface
-        coinTextFront.rotation.x = Math.PI / 2; // Make sure text faces forward
-        coin.add(coinTextFront); // Attach to coin mesh
-
-        // Align the text with the coin surface on the back side
-        coinTextBack.position.set(0, 0, -0.06); // Slightly offset from the back surface
-        coinTextBack.rotation.x = -Math.PI / 2; // Make sure text faces backward
-        coin.add(coinTextBack); // Attach to coin mesh
-
-        coinTexts.push({ front: coinTextFront, back: coinTextBack });
-      }
-    });
-
-    // Spark particles setup (optional for extra visual effect)
+    // Spark particles setup (kept for visual effect)
     const sparkCount = 500;
     const sparkGeometry = new THREE.BufferGeometry();
     const sparkPositions = new Float32Array(sparkCount * 3);
@@ -907,19 +920,6 @@ const CanvasScene = () => {
     const animate = function () {
       requestAnimationFrame(animate);
       const time = clock.getElapsedTime();
-
-      // Toggle between golden and silver color every second
-      const toggleColor = Math.floor(time) % 2 === 0 ? 0xDFAD2E : 0xC0C0C0; // Golden (FFD700) or Silver (C0C0C0)
-
-      coins.forEach((coin, index) => {
-        coin.material.color.set(toggleColor); // Set the coin color to either golden or silver
-
-        // Rotate and move the coins slightly for animation
-        coin.rotation.x += 0.01;
-        coin.rotation.y += 0.02;
-        coin.position.y += 0.01 * Math.sin(time + index); // Floating effect
-        if (coin.position.y > 10) coin.position.y = -10; // Reset position if too high
-      });
 
       // Animate sparks: make them flicker or move slightly
       const sparkPositions = sparkGeometry.attributes.position.array;
@@ -951,7 +951,7 @@ const CanvasScene = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute bg-transparent z-3 " />;
+  return <canvas ref={canvasRef} className="absolute bg-transparent z-3 opacity-20" />;
 };
 
 export default CanvasScene;

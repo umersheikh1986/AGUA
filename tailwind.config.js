@@ -8,6 +8,15 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        bgColorChange: {
+          '0%, 100%': { backgroundColor: '#554922' }, // First color
+          '50%': { backgroundColor: '#abcdef' },      // Second color
+        },
+      },
+      animation: {
+        bgColorChange: 'bgColorChange 1s ease-in-out infinite',
+      },
+      keyframes: {
         appear: {
           '0%': {
             opacity: '0',

@@ -6,15 +6,16 @@ import CanvasScene from "./Animate";
 import ThreeLensflare from "./Three";
 import CoinAnimation from "./Animate";
 
+
 export const HeroSection = () => {
   return (
     <>
     <div className="grid  grid-cols-1 md:grid-cols-2 h-[550px]">
-    {/* <CanvasScene /> */}
-    <CoinAnimation />
+    <CanvasScene />
+    {/* <CoinAnimation /> */}
     {/* <ThreeLensflare /> */}
       {/* Text Section */}
-      <div className="flex-1 ml-20 flex flex-col justify-center z-10  rounded-lg  p-5">
+      <div className="flex-1 ml-20 flex flex-col justify-center z-10 rounded-lg p-10 mt-40">
         <h2 className="text-6xl text-white font-bold mb-2">
           A STABLE SILVER &
         </h2>
