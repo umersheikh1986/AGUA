@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { TiCameraOutline } from "react-icons/ti";
 import { useEffect,useRef } from "react";
+import CanvasScene from "./Animate";
 
 import { GoCreditCard } from "react-icons/go";
 export default function GettingCards() {
@@ -60,6 +61,7 @@ export default function GettingCards() {
 
   return (
     <div className="mx-auto py-40">
+      {/* <CanvasScene /> */}
       <div className="place-items-center text-white flex justify-center">
         <h2 className="text-3xl text-center">HOW TO GET OUR CARDS</h2>
       </div>

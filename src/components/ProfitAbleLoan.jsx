@@ -73,10 +73,10 @@ export const ProfitAbleLoan = () => {
 
   return (
     <div className="">
-      <CanvasScene />
+      {/* <CanvasScene /> */}
       <div className="grid grid-cols-1 mt-6 md:grid-cols-2 gap-5 mx-5 ">
         <div ref={divRes} className="flex flex-col gap-8 mt-10 rounded-[40px] bg-white bg-opacity-10 backdrop-blur-lg p-10">
-          <h2 className="text-6xl font-bold text-white">Profitable Loans</h2>
+          <h2 className="sm:text-6xl text-4xl font-bold text-white">Profitable Loans</h2>
           <div className="flex flex-col gap-5">
             <p className="text-white">
               1.Lorem Ipsum is simply dummy text of the printing and typesetting

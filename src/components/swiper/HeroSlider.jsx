@@ -15,6 +15,7 @@ import { EffectCube, Autoplay } from "swiper/modules";
 export default function HeroSlider() {
   return (
     <>
+   
       <Swiper
         effect={"cube"}
         grabCursor={true}
@@ -39,6 +40,7 @@ export default function HeroSlider() {
           <img src="/silver.png" />
         </SwiperSlide>
       </Swiper>
+  
     </>
   );
 }

@@ -28,14 +28,14 @@ export default function Home() {
   return (
     <>
       <main
-      className="gradient-animation"
+      className="overflow-hidden"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
         //style={{ background: 'linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%)' }}
         //style={{ background: 'linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%)' }} 
       >
-        <style jsx>{`
+        {/* <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -51,14 +51,14 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style>
+`}</style> */}
         <Navbar />
         <HeroSection />
         <ThreeCard />
     
       </main>
-      <main className="gradient-animation">
-      <style jsx>{`
+      <main className="">
+      {/* <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -74,7 +74,7 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style>
+`}</style> */}
 
       <Youtube />
         <Chart />
@@ -89,9 +89,9 @@ export default function Home() {
         //   backgroundAttachment:
         //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
         // }}
-        className="gradient-animation"
+        className="overflow-x-hidden"
       >
-          <style jsx>{`
+          {/* <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -107,7 +107,7 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style>
+`}</style> */}
         <ProfitAbleLoan />
         <GettingCards />
         <Footer />

@@ -5,16 +5,221 @@ import HeroSlider from "./swiper/HeroSlider";
 import CanvasScene from "./Animate";
 import ThreeLensflare from "./Three";
 import CoinAnimation from "./Animate";
-
+import { EffectCube, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect,useRef } from "react";
 
 export const HeroSection = () => {
+  
+  const divleft = useRef(null);
+useEffect(() => {
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-slideInLeft");
+      }
+    });
+  },
+  {
+    threshold: 0.1, 
+  }
+);
+
+if (divleft.current) {
+  observer.observe(divleft.current);
+}
+
+return () => {
+  if (divleft.current) {
+    observer.unobserve(divleft.current);
+  }
+};
+}, []);
+
+
+  const divright = useRef(null);
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideInRight");
+        }
+      });
+    },
+    {
+      threshold: 0.1, 
+    }
+  );
+
+  if (divright.current) {
+    observer.observe(divright.current);
+  }
+
+  return () => {
+    if (divright.current) {
+      observer.unobserve(divright.current);
+    }
+  };
+}, []);
   return (
     <>
-    <div className="grid  grid-cols-1 md:grid-cols-2 h-[550px]">
-    <CanvasScene />
-    {/* <CoinAnimation /> */}
-    {/* <ThreeLensflare /> */}
-      {/* Text Section */}
+<div className="flex flex-col max-w-full h-auto max-h-[800px]  sm:max-h-[1100px]">
+  {/* <CanvasScene /> */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
+    <div ref={divleft} className="flex flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg mt-32 sm:mt-32 md:mt-20">
+      <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+        A STABLE SILVER &
+      </h2>
+      <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+        GOLD THAT HELPS
+      </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-yellow-600 my-4">
+        <span className="text-[#c9cbcc] text-2xl sm:text-3xl md:text-5xl">YOU WIN</span> THE GAME
+      </h2>
+
+      <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </p>
+
+      <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
+        <Link
+          href={"/"}
+          className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer"
+        >
+          OUR OFFERS
+        </Link>
+        <Link
+          href={"/"}
+          className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
+        >
+          CREATE CARDS
+        </Link>
+      </div>
+    </div>
+
+    {/* Second Grid Item */}
+    <div ref={divright} className="relative flex justify-center items-center sm:mb-20 mb-20 md:mt-0">
+      <div className="relative w-full h-[300px] md:h-full flex justify-center items-center">
+        <Swiper
+          effect={"cube"}
+          grabCursor={true}
+          autoplay={{
+            loop: true,
+            delay: 3000,
+          }}
+          cubeEffect={{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          }}
+          pagination={true}
+          modules={[EffectCube, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src="/gold.png" alt="Gold" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/silver.png" alt="Silver" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+  </div>
+
+ 
+</div>
+
+
+    {/* <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-[550px] max-h-[600px]">
+ 
+  <div className="flex-1 md:ml-20 flex flex-col justify-center z-10 rounded-lg p-5 sm:p-10 mt-10 sm:mt-20 md:mt-40">
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      A STABLE SILVER &
+    </h2>
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      GOLD THAT HELPS
+    </h2>
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-yellow-600 my-4">
+      <span className="text-[#c9cbcc] text-2xl sm:text-3xl md:text-5xl">YOU WIN</span> THE GAME
+    </h2>
+
+    <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+
+    <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
+      <Link
+        href={"/"}
+        className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer"
+      >
+        OUR OFFERS
+      </Link>
+      <Link
+        href={"/"}
+        className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
+      >
+        CREATE CARDS
+      </Link>
+    </div>
+  </div>
+
+  
+  <div className="relative flex justify-center z-10 items-center mt-10 md:mt-0">
+    <div className="relative w-full h-[300px] md:h-full flex justify-center items-center overflow-hidden">
+   <HeroSlider />
+  
+    </div>
+  </div>
+</div>
+
+<hr className="border-[#D2BA57] mt-10" /> */}
+
+
+
+    {/* <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-[550px]">
+  <div className="flex-1 md:ml-20 flex flex-col justify-center z-10 rounded-lg p-5 sm:p-10 mt-10 sm:mt-20 md:mt-40">
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      A STABLE SILVER &
+    </h2>
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      GOLD THAT HELPS
+    </h2>
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-yellow-600 my-4">
+      <span className="text-[#c9cbcc] text-2xl sm:text-3xl md:text-5xl">YOU WIN</span> THE GAME
+    </h2>
+
+    <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+
+    <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
+      <Link
+        href={"/"}
+        className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer"
+      >
+        OUR OFFERS
+      </Link>
+      <Link
+        href={"/"}
+        className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
+      >
+        CREATE CARDS
+      </Link>
+    </div>
+  </div>
+
+  <div className="relative flex justify-center z-10 items-center mt-10 md:mt-0">
+    <div className="relative w-full h-[300px] md:h-full flex justify-center items-center">
+      <HeroSlider />
+    </div>
+  </div>
+</div>
+<hr className="border-[#D2BA57] mt-10" /> */}
+    {/* <div className="grid  grid-cols-1 md:grid-cols-2 h-[550px]">
       <div className="flex-1 ml-20 flex flex-col justify-center z-10 rounded-lg p-10 mt-40">
         <h2 className="text-6xl text-white font-bold mb-2">
           A STABLE SILVER &
@@ -42,24 +247,56 @@ export const HeroSection = () => {
             className=" border-2 border-white bg-gradient-to-r from-[#353535]  via-[#CBCDCF] via-30% to-[#6C6C6C]
             to-70% bg-blend-multiply px-20 py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
           >
-            {/* {" "} */}
             CREATE CARDS
           </Link>
         </div>
       </div>
 
-      {/* Image Section */}
       <div className="relative flex justify-center z-10 items-center">
         <div className="relative w-full h-full flex justify-center items-center">
-          {/* <img
-            src="/gold.png"
-            alt="golden-card"
-            className="w-[500px] h-[450px]"
-          /> */}
           <HeroSlider />
         </div>
       </div>
+    </div> */}
+   {/* <div className="flex flex-col md:flex-row h-auto md:h-[550px]">
+  <div className="flex-1 md:ml-20 flex flex-col justify-center z-10 rounded-lg p-5 sm:p-10 mt-10 sm:mt-20 md:mt-40">
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      A STABLE SILVER &
+    </h2>
+    <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
+      GOLD THAT HELPS
+    </h2>
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-yellow-600 my-4">
+      <span className="text-[#c9cbcc] text-2xl sm:text-3xl md:text-5xl">YOU WIN</span> THE GAME
+    </h2>
+    <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+
+    <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
+      <Link
+        href={"/"}
+        className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer"
+      >
+        OUR OFFERS
+      </Link>
+      <Link
+        href={"/"}
+        className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
+      >
+        CREATE CARDS
+      </Link>
     </div>
+  </div>
+
+  <div className="relative flex justify-center z-10 items-center">
+    <div className="relative w-full h- flex justify-center items-center">
+      <HeroSlider />
+    </div>
+  </div>
+</div> */}
+
+
     </>
   );
 };

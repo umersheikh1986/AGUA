@@ -6,41 +6,125 @@ import CanvasScene from './Animate';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Members = () => {
-  const blockRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
+  const divlef = useRef(null);
   useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideInLeft");
+        }
+      });
+    },
+    {
+      threshold: 0.1, 
+    }
+  );
+
+  if (divlef.current) {
+    observer.observe(divlef.current);
+  }
+
+  return () => {
+    if (divlef.current) {
+      observer.unobserve(divlef.current);
+    }
+  };
+}, []);
+
+const divleft = useRef(null);
+useEffect(() => {
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-slideInLeft");
+      }
+    });
+  },
+  {
+    threshold: 0.1, 
+  }
+);
+
+if (divleft.current) {
+  observer.observe(divleft.current);
+}
+
+return () => {
+  if (divleft.current) {
+    observer.unobserve(divleft.current);
+  }
+};
+}, []);
+
+const divrig = useRef(null);
+    useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target); // Optional: Stop observing once visible
+            entry.target.classList.add("animate-slideInRight");
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      {
+        threshold: 0.1, 
+      }
     );
 
-    if (blockRef.current) {
-      observer.observe(blockRef.current);
+    if (divrig.current) {
+      observer.observe(divrig.current);
     }
+
+    return () => {
+      if (divrig.current) {
+        observer.unobserve(divrig.current);
+      }
+    };
   }, []);
+
+  const divright = useRef(null);
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slideInRight");
+          }
+        });
+      },
+      {
+        threshold: 0.1, 
+      }
+    );
+
+    if (divright.current) {
+      observer.observe(divright.current);
+    }
+
+    return () => {
+      if (divright.current) {
+        observer.unobserve(divright.current);
+      }
+    };
+  }, []);
+
 
   return (
     <>
     <div>
-      <CanvasScene />
+      {/* <CanvasScene /> */}
         <p className='text-center text-gray-300 font-bold mt-10 font-times '>OUR AMAZING</p>
         <p className='text-center text-white text-4xl font-times font-extrabold'>Team Of Experts</p>
     </div>
-    <div ref={blockRef} className={`flex flex-wrap justify-center gap-20 mt-8 ${isVisible ? 'animate-appear' : 'opacity-0'}`} >
-            <div className="bg-[#493E1D] card w-96 shadow-xl ">
+    <div className='flex flex-wrap justify-center gap-6 md:gap-28 mt-8 '>
+            <div ref={divleft} className="bg-[#493E1D] card w-64 h-80 md:h-full md:w-80 shadow-xl ">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/04/martin-photo2.jpg"
       alt="Shoes"
-      className="rounded-xl h-[300px]" />
+      className="rounded-xl md:h-[300px] h-[220px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Martin Mobarak</b></h2>
@@ -49,12 +133,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-[#493E1D]  w-96 shadow-xl">
+<div className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/oscar-photo-e1616786798745.jpg"
       alt="Shoes"
-      className="rounded-xl h-[300px]" />
+      className="rounded-xl md:h-[300px] h-[220px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Oscar Jarquin</b></h2>
@@ -63,12 +147,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-[#493E1D] w-96 shadow-xl">
+<div ref={divrig} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/omar-e1616787014904.jpg"
       alt="Shoes"
-      className="rounded-xl h-[300px]" />
+      className="rounded-xl md:h-[300px] h-[220px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Omar Mobarak</b></h2>
@@ -77,12 +161,12 @@ const Members = () => {
   </div>
 </div>
 
-<div className="card bg-[#493E1D] w-96 shadow-xl">
+<div ref={divlef} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/bryan-photo-e1616786841161.jpg"
       alt="Shoes"
-      className="rounded-xl h-[300px]" />
+      className="rounded-xl md:h-[300px] h-[220px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Bryan Cohen</b></h2>
@@ -90,12 +174,12 @@ const Members = () => {
 
   </div>
 </div>
-<div className="card bg-[#493E1D] w-96 shadow-xl">
+<div ref={divright} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/Hans.jpg"
       alt="Shoes"
-      className="rounded-xl h-[300px]" />
+      className="rounded-xl md:h-[300px] h-[220px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Hans Kuhn</b></h2>

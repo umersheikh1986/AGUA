@@ -3,10 +3,10 @@ import CanvasScene from "./Animate";
 
 export const Footer = () => {
   return (
-    <div className="">
-      <footer className=" text-white dark:bg-gray-900">
+    <div className="w-full overflow-x-hidden">
+      <footer className=" w-full text-white dark:bg-gray-900">
         {/* <hr className="" /> */}
-        <div className="  max-w-9xl  p-12    bg-white bg-opacity-10 backdrop-blur-sm   py-6 lg:py-16">
+        <div className="  max-w-full  p-12    bg-white bg-opacity-10 backdrop-blur-sm overflow-x-hidden  py-6 lg:py-16">
           <div className="md:flex md:justify-between">
             <div className="mb-6 gap-6 md:mb-0">
               <a href="/" className=" ">
@@ -149,5 +149,6 @@ export const Footer = () => {
         </div>
       </footer>
     </div>
+
   );
 };
