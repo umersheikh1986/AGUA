@@ -114,26 +114,104 @@ const divrig = useRef(null);
   return (
     <>
     <div>
-      {/* <CanvasScene /> */}
+      <CanvasScene />
         <p className='text-center text-gray-300 font-bold mt-10 font-times '>OUR AMAZING</p>
         <p className='text-center text-white text-4xl font-times font-extrabold'>Team Of Experts</p>
     </div>
-    <div className='flex flex-wrap justify-center gap-6 md:gap-28 mt-8 '>
-            <div ref={divleft} className="bg-[#493E1D] card w-64 h-80 md:h-full md:w-80 shadow-xl ">
+    <div className='flex flex-wrap justify-center gap-6 md:gap-20 mt-8 '>
+            {/* <div ref={divleft} className="bg-[#493E1D] card w-64 h-80 md:h-[420px] md:w-80 shadow-xl ">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/04/martin-photo2.jpg"
       alt="Shoes"
-      className="rounded-xl md:h-[300px] h-[220px]" />
+      className="rounded-xl md:h-[300px] h-[220px] w-[300px]" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-white"><b>Martin Mobarak</b></h2>
     <p className='text-white'><b>Founder, CEO</b></p>
    
   </div>
+</div> */}
+<div ref={divlef} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://agcoin.io/wp-content/uploads/2021/04/martin-photo2.jpg"
+      alt="Shoes"
+      className='' />
+  </figure>
+  <div className="card-body">
+    <h2 className="font-bold text-lg md:text-2xl text-white text-center">
+    Martin Mobarak
+    </h2>
+    <p className='text-white text-center text-base md:text-xl'>Founder, CEO</p>
+  </div>
 </div>
 
-<div className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
+<div className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://agcoin.io/wp-content/uploads/2021/03/oscar-photo-e1616786798745.jpg"
+      alt="Shoes"
+      className='' />
+  </figure>
+  <div className="card-body">
+    <h2 className="font-bold text-lg md:text-2xl text-white text-center">
+    Oscar Jarquin
+    </h2>
+    <p className='text-white text-center text-base md:text-xl'>CO-FOUNDER</p>
+  </div>
+</div>
+
+<div ref={divrig} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://agcoin.io/wp-content/uploads/2021/03/omar-e1616787014904.jpg"
+      alt="Shoes"
+      className='' />
+  </figure>
+  <div className="card-body">
+    <h2 className="font-bold text-lg md:text-2xl text-white text-center">
+    Omar Mobarak
+    </h2>
+    <p className='text-white text-center text-base md:text-xl'>CO-FOUNDER</p>
+  </div>
+</div>
+
+<div ref={divleft} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://agcoin.io/wp-content/uploads/2021/03/bryan-photo-e1616786841161.jpg"
+      alt="Shoes"
+      className='' />
+  </figure>
+  <div className="card-body">
+    <h2 className="font-bold text-lg md:text-2xl text-white text-center">
+    Bryan Cohen
+    </h2>
+    <p className='text-white text-center text-base md:text-xl'>COB</p>
+  </div>
+</div>
+
+<div ref={divright} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://agcoin.io/wp-content/uploads/2021/03/Hans.jpg"
+      alt="Shoes"
+      className='w-full' />
+  </figure>
+  <div className="card-body">
+    <h2 className="font-bold text-lg md:text-2xl text-white text-center">
+    Hans Kuhn
+    </h2>
+    <p className='text-white text-center text-base md:text-xl'>Legal Avisor</p>
+  </div>
+</div>
+
+
+
+
+
+{/* <div className="card bg-[#493E1D] w-64 h-80 md:h-[420px] md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/oscar-photo-e1616786798745.jpg"
@@ -147,7 +225,7 @@ const divrig = useRef(null);
   </div>
 </div>
 
-<div ref={divrig} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
+<div ref={divrig} className="card bg-[#493E1D] w-64 h-80 md:h-[420px] md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/omar-e1616787014904.jpg"
@@ -161,7 +239,7 @@ const divrig = useRef(null);
   </div>
 </div>
 
-<div ref={divlef} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
+<div ref={divlef} className="card bg-[#493E1D] w-64 h-80 md:h-[420px] md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/bryan-photo-e1616786841161.jpg"
@@ -174,7 +252,7 @@ const divrig = useRef(null);
 
   </div>
 </div>
-<div ref={divright} className="card bg-[#493E1D] w-64 h-80 md:h-full md:w-80 shadow-xl">
+<div ref={divright} className="card bg-[#493E1D] w-64 h-80 md:h-[420px] md:w-80 shadow-xl">
            <figure className="px-10 pt-10">
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/Hans.jpg"
@@ -185,7 +263,7 @@ const divrig = useRef(null);
     <h2 className="card-title text-white"><b>Hans Kuhn</b></h2>
     <p className='text-white'><b>Legal Avisor</b></p>
   </div>
-</div> 
+</div>  */}
     </div>
     </>
   )

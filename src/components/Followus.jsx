@@ -59,7 +59,7 @@ const Followus = () => {
   </button>
 </div> */}
 
-<div ref={divRes} className='bg-customgray mt-20 rounded-[10px]  '>
+<div ref={divRes} className="bg-customgray mt-20 rounded-[10px]  ">
 {/* <CanvasScene /> */}
 <div className="text-center text-white text-2xl md:text-4xl pt-10 font-times font-extrabold">
   Stay tuned with our latest project<br /> updates or follow us on any of the social<br /> media channels below
@@ -69,7 +69,7 @@ const Followus = () => {
   <input
     type="text"
     placeholder="Enter your Email"
-    className="input input-bordered w-5/6 max-w-xs md:max-w-none md:w-[440px]"
+    className="input input-bordered w-5/6 max-w-xs md:max-w-none md:w-[440px] font-times"
   />
   <button className="btn btn-active w-40 md:ml-2 mt-2 md:mt-0 font-times">
     Subscribe

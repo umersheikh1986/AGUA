@@ -6,11 +6,14 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Youtube } from "@/components/Youtube";
+import Participate from "@/components/Participate";
+import Partners from "@/components/Partners";
 import Members from "@/components/Members";
 import Followus from "@/components/Followus";
 import CanvasScene from "@/components/Animate";
 import Link from "next/link";
 import Chart from "@/components/Chart";
+import Distribution from "@/components/Distribution";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -28,14 +31,14 @@ export default function Home() {
   return (
     <>
       <main
-      className="overflow-hidden"
+      className="overflow-hidden gradient-animation"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
         //style={{ background: 'linear-gradient(45deg, hsla(195, 2%, 59%, 1) 0%, hsla(0, 0%, 0%, 1) 69%)' }}
         //style={{ background: 'linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%)' }} 
       >
-        {/* <style jsx>{`
+        <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -51,14 +54,14 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style> */}
+`}</style>
         <Navbar />
         <HeroSection />
         <ThreeCard />
     
       </main>
-      <main className="">
-      {/* <style jsx>{`
+      <main className="gradient-animation">
+      <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -74,12 +77,13 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style> */}
+`}</style>
 
       <Youtube />
+      <Distribution />
         <Chart />
         <Members />
-        <Followus />
+        <Partners />
         
       </main>
       <main
@@ -89,9 +93,9 @@ export default function Home() {
         //   backgroundAttachment:
         //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
         // }}
-        className="overflow-x-hidden"
+        className="overflow-x-hidden bg-[url('https://cdn.jevelin.shufflehound.com/crypto/wp-content/uploads/sites/19/2018/04/Rectangle-922-copy.jpg')]"
       >
-          {/* <style jsx>{`
+          <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
   }
@@ -107,9 +111,13 @@ export default function Home() {
       background: linear-gradient(45deg, hsla(47, 42%, 21%, 1) 26%, hsla(0, 0%, 0%, 1) 69%);
     }
   }
-`}</style> */}
-        <ProfitAbleLoan />
-        <GettingCards />
+`}</style>
+        {/* <ProfitAbleLoan /> */}
+        {/* <GettingCards /> */}
+        <Followus />
+        <Participate />
+      </main>
+      <main className="gradient-animation">
         <Footer />
       </main>
 

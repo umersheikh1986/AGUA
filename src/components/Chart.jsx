@@ -66,9 +66,9 @@ const divright = useRef(null);
 
  <hr className="border-[#D2BA57]" /> */}
  <div className='flex flex-col md:flex-row mt-20 w-full h-auto space-y-10 md:space-y-0 md:space-x-20 justify-center items-center'>
- {/* <CanvasScene /> */}
-  <img ref={divleft} className='h-auto w-4/5 md:w-2/6' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/04/Picture11.png" alt="" />
-  <img ref={divright} className='h-auto w-4/5 md:w-2/5' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/03/Picture2.png" alt="" />
+ <CanvasScene />
+  <img ref={divleft} className='h-auto w-4/5 md:w-1/3' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/04/Picture11.png" alt="" />
+  <img ref={divright} className='h-auto w-4/5 md:w-1/3' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/03/Picture2.png" alt="" />
 </div>
 
 <hr className="border-[#D2BA57] mt-10" />

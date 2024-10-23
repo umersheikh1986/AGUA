@@ -252,24 +252,20 @@ const divrig = useRef(null);
       </div> */}
 
 
-      <div className="mx-auto mt-20 sm:mt-40 md:mt-60 py-10 sm:py-20 w-full">
-      {/* <CanvasScene /> */}
+      {/* <div className="mx-auto mt-20 sm:mt-40 md:mt-60 py-10 sm:py-20 ">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 w-full mb-20">
   
 
     
     <div ref={divlef} className="flex items-center justify-center">
       <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
-        <div className="absolute -top-28 left-12">
-          <img className="w-60 h-60 md:w-80 md:h-80 hover:scale-150 transition-transform duration-300 ease-in-out" src="3Dbanklocker.png" alt="locker" />
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/opportunity.png" alt="locker" />
         </div>
         <div className="relative top-40 md:top-48 px-6">
-          <h2 className="text-white text-xl md:text-2xl text-center">RELIABILITY</h2>
+          <h2 className="text-white text-xl md:text-2xl text-center">OPPORTUNITY</h2>
           <p className="text-gray-300 text-sm text-start mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+          Tokenized vault-base silver deposits followed by amazing tokenization incentives.
           </p>
         </div>
       </div>
@@ -278,16 +274,13 @@ const divrig = useRef(null);
     
     <div className="flex items-center justify-center">
       <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
-        <div className="absolute -top-28 left-12">
-          <img className="w-60 h-60 md:w-80 md:h-80 hover:scale-150 transition-transform duration-300 ease-in-out" src="3Dmoneycash.png" alt="money cash" />
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32  hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/goal.png" alt="money cash" />
         </div>
         <div className="relative top-40 md:top-48 px-6">
-          <h2 className="text-white text-xl md:text-2xl text-center">Best Exchange Rate</h2>
+          <h2 className="text-white text-xl md:text-2xl text-center">TECHNOLOGY</h2>
           <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+          Polkadot Parachain to power perpetual tokenization of global silver and more vault-based assets.
           </p>
         </div>
       </div>
@@ -296,61 +289,136 @@ const divrig = useRef(null);
     
     <div ref={divrig} className="flex items-center justify-center">
       <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
-        <div className="absolute -top-28 left-12">
-          <img className="w-60 h-60 md:w-80 md:h-80 hover:scale-150 transition-transform duration-300 ease-in-out" src="3Dpaymentdeadline.png" alt="payment deadline" />
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/global.png" alt="payment deadline" />
         </div>
         <div className="relative top-40 md:top-48 px-6">
-          <h2 className="text-white text-xl md:text-2xl text-center">Quick Transfers</h2>
+          <h2 className="text-white text-xl md:text-2xl text-center">APPLICATION</h2>
           <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+          AgCoin (AGC) stores a value equal to an ounce of silver and acts as a medium of exchange for the acquisition of AGS tokens.
           </p>
         </div>
       </div>
     </div>
-
     
     <div ref={divleft} className="flex items-center justify-center">
-      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg mt-10 md:mt-14 p-6">
-        <div className="absolute -top-28 left-12">
-          <img className="w-60 h-60 md:w-80 md:h-80 hover:scale-150 transition-transform duration-300 ease-in-out" src="3Dbanklocker.png" alt="locker" />
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg  p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/utility.png" alt="locker" />
         </div>
         <div className="relative top-40 md:top-48 px-6">
-          <h2 className="text-white text-xl md:text-2xl text-center">RELIABILITY</h2>
+          <h2 className="text-white text-xl md:text-2xl text-center">STRUCTURE</h2>
           <p className="text-gray-300 text-sm text-start mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+          AGS Token (AGS) act as a digital representation of co-ownership rights in a specific silver bullion. Backed by a gram of silver can be only purchased and divested with AgCoin (AGC).
           </p>
         </div>
       </div>
     </div>
 
     <div ref={divright} className="flex items-center justify-center">
-      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg mt-10 md:mt-14 p-6">
-        <div className="absolute -top-28 left-12">
-          <img className="w-60 h-60 sm:w-80 sm:h-80 hover:scale-150 transition-transform duration-300 ease-in-out" src="3Dbanklocker.png" alt="locker" />
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg  p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/legal.png" alt="locker" />
         </div>
         <div className="relative top-40 md:top-48 px-6">
-          <h2 className="text-white text-xl md:text-2xl text-center">RELIABILITY</h2>
+          <h2 className="text-white text-xl md:text-2xl text-center">LEGAL</h2>
           <p className="text-gray-300 text-sm text-start mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-          <p className="text-gray-300 text-sm text-center mt-5">
-            Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+          Swiss based jurisdiction backed by experienced legal advisors with feasible structure according with the new Swiss DLT Act.
           </p>
         </div>
       </div>
     </div>
+   </div>
+  </div> */}
+
+<div className="mx-auto mt-20 sm:mt-40 md:mt-60 py-10 sm:py-20">
+  <CanvasScene />
+  <div className="flex flex-wrap justify-center gap-8 w-full mb-20">
+    
+    {/* Card 1 */}
+    <div ref={divlef} className="flex items-center justify-center w-full md:w-1/2 lg:w-[450px]">
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/opportunity.png" alt="locker" />
+        </div>
+        <div className="relative top-40 md:top-48 px-6">
+          <h2 className="text-white text-xl md:text-2xl text-center">OPPORTUNITY</h2>
+          <p className="text-gray-300 text-sm text-start mt-5">
+            Tokenized vault-base silver deposits followed by amazing tokenization incentives.
+          </p>
+        </div>
+      </div>
     </div>
+    
+    {/* Card 2 */}
+    <div className="flex items-center justify-center w-full md:w-1/2 lg:w-[450px]">
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/goal.png" alt="money cash" />
+        </div>
+        <div className="relative top-40 md:top-48 px-6">
+          <h2 className="text-white text-xl md:text-2xl text-center">TECHNOLOGY</h2>
+          <p className="text-gray-300 text-sm text-center mt-5">
+            Polkadot Parachain to power perpetual tokenization of global silver and more vault-based assets.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div ref={divrig} className="flex items-center justify-center w-full md:w-1/2 lg:w-[450px]">
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/global.png" alt="payment deadline" />
+        </div>
+        <div className="relative top-40 md:top-48 px-6">
+          <h2 className="text-white text-xl md:text-2xl text-center">APPLICATION</h2>
+          <p className="text-gray-300 text-sm text-center mt-5">
+            AgCoin (AGC) stores a value equal to an ounce of silver and acts as a medium of exchange for the acquisition of AGS tokens.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    {/* Card 4 */}
+    <div ref={divleft} className="flex items-center justify-center w-full md:w-1/2 lg:w-[450px]">
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/utility.png" alt="locker" />
+        </div>
+        <div className="relative top-40 md:top-48 px-6">
+          <h2 className="text-white text-xl md:text-2xl text-center">STRUCTURE</h2>
+          <p className="text-gray-300 text-sm text-start mt-5">
+            AGS Token (AGS) acts as a digital representation of co-ownership rights in a specific silver bullion.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 5 */}
+    <div ref={divright} className="flex items-center justify-center w-full md:w-1/2 lg:w-[450px]">
+      <div className="w-full relative h-[450px] mx-5 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6">
+        <div className="absolute -top-28 left-32">
+          <img className="md:w-52 md:h-52 h-32 w-32 hover:scale-150 transition-transform duration-300 ease-in-out" src="https://agcoin.io/wp-content/uploads/2021/03/legal.png" alt="locker" />
+        </div>
+        <div className="relative top-40 md:top-48 px-6">
+          <h2 className="text-white text-xl md:text-2xl text-center">LEGAL</h2>
+          <p className="text-gray-300 text-sm text-start mt-5">
+            Swiss-based jurisdiction backed by experienced legal advisors with a feasible structure according to the new Swiss DLT Act.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
 
 
-
-
+   {/* <div className="w-full">
+  <div className="flex justify-center gap-10 flex-wrap mb-20 w-full">
+  
+  </div>
+</div> */}
 
     <hr className="border-[#D2BA57]"/>
     </>
