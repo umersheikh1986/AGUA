@@ -881,7 +881,7 @@
 
 // export default CanvasScene;
 
-
+// Correct Code
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -889,9 +889,9 @@ const CanvasScene = () => {
   const canvasRef = useRef();
 
   useEffect(() => {
-    // Set up the scene, camera, and renderer
+    
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('#373016'); // Set background color to #373016
+    scene.background = new THREE.Color('#373016'); 
 
     const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
@@ -899,7 +899,7 @@ const CanvasScene = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.position.z = 15;
 
-    // Spark particles setup (kept for visual effect)
+    
     const sparkCount = 500;
     const sparkGeometry = new THREE.BufferGeometry();
     const sparkPositions = new Float32Array(sparkCount * 3);
