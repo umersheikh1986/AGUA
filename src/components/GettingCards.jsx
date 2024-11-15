@@ -61,7 +61,7 @@ export default function GettingCards() {
 
   return (
     <div className="mx-auto py-40">
-      <CanvasScene />
+      {/* <CanvasScene /> */}
       <div className="place-items-center text-white flex justify-center">
         <h2 className="text-3xl text-center">HOW TO GET OUR CARDS</h2>
       </div>

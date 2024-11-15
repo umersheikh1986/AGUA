@@ -66,7 +66,7 @@ return () => {
   return (
     <>
 <div className="flex flex-col max-w-full h-auto max-h-[800px]  sm:max-h-[1100px]">
-  <CanvasScene />
+  {/* <CanvasScene /> */}
   <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
     <div ref={divleft} className="flex flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg mt-32 sm:mt-32 md:mt-20">
       <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
