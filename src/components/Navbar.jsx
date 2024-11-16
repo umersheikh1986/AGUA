@@ -1,8 +1,15 @@
 "use client";
 import React from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
-
+import { useRouter } from "next/navigation";
 export const Navbar = () => {
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push("../about");
+  };
+  const handleNavigatione = () => {
+    router.push("../Docs");
+  };
   return (
     // <div>
     //   <nav
@@ -185,8 +192,8 @@ export const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow opacity-80 z-50 bg-black">
         <li className="text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
-        <li className="text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-        <li className="text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
+        <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
+        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
       </ul>
     </div>
     <img src="/agua-logo.png" className="lg:h-24 lg:w-24 h-12 w-12  lg:ml-12" alt="Flowbite Logo" />
@@ -195,8 +202,8 @@ export const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
-      <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-      <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
+      <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
+      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
     </ul>
   </div>
   <div className="navbar-end">

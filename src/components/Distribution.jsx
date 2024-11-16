@@ -320,7 +320,7 @@
 
 import React from 'react';
 
-export default function Roadmap() {
+export default function Distribution() {
   const steps = [
     { title: "Phase 1", description: "CoralCoin launch\nPoW starts" },
     { title: "Phase 2", description: "Some event\nSome event" },
