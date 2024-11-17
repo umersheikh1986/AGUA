@@ -36,7 +36,7 @@ export const Youtube = () => {
        <iframe className='border-4 border-lightgold z-10 rounded-[40px]' width="80%" height="615" src="https://www.youtube.com/embed/Uaijo3pjOTk?si=yzgPQmjwvxK0tuGx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div> */}
   <div ref={divright} className="flex items-center justify-center h-screen">
-  {/* <CanvasScene /> */}
+  <CanvasScene />
   <div className="w-3/4">
     <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
       <iframe

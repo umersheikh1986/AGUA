@@ -332,7 +332,7 @@ const divrig = useRef(null);
   </div> */}
 
 <div className="mx-auto mt-20 sm:mt-40 md:mt-60 py-10 sm:py-20">
-  {/* <CanvasScene /> */}
+  <CanvasScene />
   <div className="flex flex-wrap justify-center gap-8 w-full mb-20">
     
     {/* Card 1 */}
