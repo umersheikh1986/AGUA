@@ -1,5 +1,5 @@
 "use client";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import React from "react";
 import ChartOne from "./Chartone";
 import ChartTwo from "./ChartTwo";
