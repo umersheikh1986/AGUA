@@ -3,7 +3,7 @@
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 // import "@/styles/globals.css";
-import "../styles/globals"
+import "../styles/globals.css"
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 const activeChain = "ethereum";
 

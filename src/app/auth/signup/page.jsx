@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import '../../../styles/globals.css'
-import Breadcrumb from "@/components/breadcrump/Breadcrump";
-import DefaultLayout from "@/components/maincomp/DefaultLayout";
+import Breadcrumb from "../../../components/breadcrump/Breadcrump";
+import DefaultLayout from "../../../components/maincomp/DefaultLayout";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import app from '../signin/firebase'
