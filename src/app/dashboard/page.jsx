@@ -1,6 +1,6 @@
-import ECommerce from "@/components/ecommerce/Ecommerce";
+import ECommerce from "../../components/ecommerce/Ecommerce";
 import { Metadata } from "next";
-import DefaultLayout from "@/components/maincomp/DefaultLayout";
+import DefaultLayout from "../../components/maincomp/DefaultLayout";
 import Link from "next/link";
 
 // export const metadata: Metadata = {
