@@ -1,5 +1,5 @@
 import Link from "next/link";
-import DarkModeSwitcher from "./DarkModeSwitcher";
+import DarkModeSwitcher from "./DarkmodeSwitcher"
 import Image from "next/image";
 // import WalletButton from "../WalletButton/walletButton";
 //import useLocalStorage from "../Sidebar/useLocalstorage";

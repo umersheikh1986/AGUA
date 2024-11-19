@@ -1,7 +1,7 @@
 import React from "react";
-import CanvasScene from "./Animate";
+import CanvasScene from "../Animate";
 
-export const Footer = () => {
+ export default function Footer  () {
   return (
     <div className="w-full overflow-x-hidden pt-10">
       {/* <CanvasScene /> */}

@@ -1,7 +1,8 @@
 "use client";
-import React from 'react'
-import './style.css'
-
+import React from 'react';
+import './style.css';
+import '../../styles/globals.css';
+import Footer from "../../components/Footer/Footer" ;
 function page() {
   return (
     <>
@@ -22,7 +23,7 @@ function page() {
   </div>
 </div>
 
-
+<Footer/>
   </>
   )
 }
