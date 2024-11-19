@@ -1,8 +1,9 @@
 "use client";
 
-import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
-import "@/styles/globals.css";
+import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Navbar";
+// import "@/styles/globals.css";
+import "../styles/globals"
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 const activeChain = "ethereum";
 

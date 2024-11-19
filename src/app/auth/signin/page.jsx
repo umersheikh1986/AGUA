@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import '../../../styles/globals.css'
 // import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import DefaultLayout from "@/components/maincomp/DefaultLayout";
+import DefaultLayout from "../components/maincomp/DefaultLayout";
 import { useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "./firebase";
 import { useRouter } from "next/navigation";
-import Breadcrumb from "@/components/breadcrump/Breadcrump";
+import Breadcrumb from "../components/breadcrump/Breadcrump";
 // export const metadata: Metadata = {
 //   title: "Next.js SignIn Page | Agua - Next.js Dashboard Template",
 //   description: "This is Next.js Signin Page Agua Dashboard Template",
