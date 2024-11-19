@@ -94,7 +94,7 @@ return () => {
     href={"/"}
     className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
   >
-    CREATE CARDS
+    BUY NOW
   </Link>
 </div>
 

@@ -10,6 +10,9 @@ export const Navbar = () => {
   const handleNavigatione = () => {
     router.push("../Docs");
   };
+  const signinNav = () => {
+    router.push("../auth/signin");
+  };
   return (
     // <div>
     //   <nav
@@ -171,7 +174,7 @@ export const Navbar = () => {
   //   </nav>
   // </div>
 
-  <div className="navbar fixed opacity-80 z-50 border-b-lightgold border-x-black border-t-black border-2 bg-black">
+  <div className="navbar fixed opacity-80 z-50 border-b-lightgold border-x-black border-t-black border-2 bg-[#0F0D06]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -190,7 +193,7 @@ export const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow opacity-80 z-50 bg-black">
+        className="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow opacity-80 z-50 bg-[#030201]">
         <li className="text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
         <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
         <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
@@ -204,6 +207,7 @@ export const Navbar = () => {
       <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
       <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
       <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
+      <li><button onClick={signinNav} className="btn btn-warning mt-2">Sign In</button></li>
     </ul>
   </div>
   <div className="navbar-end">

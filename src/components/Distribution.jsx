@@ -1,4 +1,5 @@
 "use client";
+import CanvasScene from './Animate';
 // import React from 'react'
 // import { FaRegCircleCheck } from "react-icons/fa6";
 // import { MdAccessTime } from "react-icons/md";
@@ -332,38 +333,208 @@ export default function Distribution() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="container mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold text-center mb-4 text-teal-700">ROADMAP</h2>
-        <p className="text-center text-gray-600 mb-10">
-          Check the project milestones
-        </p>
-        <div className="relative">
-          {/* Central Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
+    // <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    //   <div className="container mx-auto px-4 py-10">
+    //     <h2 className="text-3xl font-bold text-center mb-4 text-teal-700">ROADMAP</h2>
+    //     <p className="text-center text-gray-600 mb-10">
+    //       Check the project milestones
+    //     </p>
+    //     <div className="relative">
+    //       {/* Central Vertical Line */}
+    //       <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
           
-          {steps.map((step, index) => (
-            <div key={index} className="flex items-center justify-center">
-              {/* Line connecting vertical stepper to box */}
-              <hr
-                className={`absolute w-16 border-t border-gray-400 ${index % 2 === 0 ? 'left-1/2 mr-4' : 'right-1/2 ml-4'}`}
-              />
+    //       {steps.map((step, index) => (
+    //         <div key={index} className="flex items-center justify-center">
+    //           {/* Line connecting vertical stepper to box */}
+    //           <hr
+    //             className={`absolute w-16 border-t border-gray-400 ${index % 2 === 0 ? 'left-1/2 mr-4' : 'right-1/2 ml-4'}`}
+    //           />
 
-              <div className={`flex items-center w-full py-4 ${index % 2 === 0 ? 'justify-end pr-96' : 'justify-start pl-96'}`}>
-                <div className={`w-full md:w-1/3 max-w-xs p-4 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transform transition duration-300 hover:scale-105 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                  <h3 className="text-lg font-semibold text-teal-600">{step.title}</h3>
-                  <p className="text-gray-600 whitespace-pre-line mt-2">{step.description}</p>
-                </div>
-              </div>
+    //           <div className={`flex items-center w-full py-4 ${index % 2 === 0 ? 'justify-end pr-96' : 'justify-start pl-96'}`}>
+    //             <div className={`w-full md:w-1/3 max-w-xs p-4 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transform transition duration-300 hover:scale-105 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
+    //               <h3 className="text-lg font-semibold text-teal-600">{step.title}</h3>
+    //               <p className="text-gray-600 whitespace-pre-line mt-2">{step.description}</p>
+    //             </div>
+    //           </div>
               
-              {/* Step Number Circle */}
-              <div className="flex items-center justify-center w-8 h-8 bg-teal-500 text-white rounded-full absolute left-1/2 transform -translate-x-1/2">
-                {/* {index + 1} */}
-              </div>
-            </div>
-          ))}
+    //           {/* Step Number Circle */}
+    //           <div className="flex items-center justify-center w-8 h-8 bg-teal-500 text-white rounded-full absolute left-1/2 transform -translate-x-1/2">
+    //             {/* {index + 1} */}
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="mt-20">
+      <CanvasScene />
+      <h2 className="text-3xl font-bold text-center mb-4 text-teal-700">ROADMAP</h2>
+         <p className="text-center text-gray-600 mb-10">
+           Check the project milestones
+         </p>
+    <ul className="timeline timeline-vertical">
+      <li>
+        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 1 <br />
+          CoralCoin launch
+          <br />
+          PoW starts
         </div>
-      </div>
-    </div>
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 2 <br />
+          Some event
+          <br />
+          Some event
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 3 <br />
+          Partnerships and event
+          <br />
+          Additional milestones
+        </div>
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 4 <br />
+          Upcoming developments
+          <br />
+          Future announcements
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 5 <br />
+          Upcoming developments
+          <br />
+          Future announcements
+        </div>
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 6 <br />
+          Upcoming developments
+          <br />
+          Future announcements
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+      <li>
+        <hr className="bg-primary h-1 sm:h-2" />
+        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
+          Phase 7 <br />
+          Upcoming developments
+          <br />
+          Future announcements
+        </div>
+        <div className="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
+      </li>
+    </ul>
+  </div>
+  
   );
 }

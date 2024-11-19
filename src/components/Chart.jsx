@@ -166,9 +166,9 @@ const divright = useRef(null);
     </div>
  <img ref={divleft} className='h-auto w-4/5 md:w-1/3' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/04/Picture11.png" alt="" />
  <hr className="border-[#D2BA57]" /> */}
- <div className='flex flex-col md:flex-row mt-20 w-full h-auto space-y-10 md:space-y-0 md:space-x-20 justify-center items-center'>
+ <div className='lg:flex flex-col md:flex-row mt-20 w-full h-auto space-y-10 md:space-y-0 md:space-x-20 justify-center items-center'>
  <CanvasScene />
- <div id="chartdiv" style={{ width: "55%", height: "500px", }}></div>;
+ <div id="chartdiv"  style={{ width: "65%", height: "500px", }}></div>;
   <div className='md:w-2/4 w-full p-16 font-times h-full'>
             <p className='font-extrabold text-4xl pl-12 font-times text-white'>Token Distribution</p>
             <p className="text-[#C7C7C7] pl-12 pt-8">61% of AGC tokens shall be distributed in the market via a Security Token Offering campaign. AGC represents a security token and purchase of it requires a mandatory KYC/AML check.  Holders of AGC token will get a portion of the second token AGT as they are produced and according with their contribution.</p>

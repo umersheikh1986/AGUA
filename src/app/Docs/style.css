@@ -9,20 +9,21 @@ justify-self:center;} */
 /* General Reset */
 /* General Reset */
 /* General Reset */
-body {
+
+
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
   }
   
-  /* Download Section Styling */
   .download-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #d4af37, #c0c0c0); /* Golden to Silver Gradient */
+    background: linear-gradient(135deg, #d4af37, #c0c0c0); 
   }
   
   .card-heading {
@@ -32,7 +33,7 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: -50px;
-    background: linear-gradient(135deg, #d4af37, #c0c0c0); /* Golden to Silver Gradient */
+    background: linear-gradient(135deg, #d4af37, #c0c0c0); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -45,18 +46,18 @@ body {
     margin-top: 100px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border: 2px solid #d4af37; /* Golden Border */
+    border: 2px solid #d4af37; 
   }
   
   .download-content h2 {
     font-size: 2rem;
-    color: #d4af37; /* Golden Text */
+    color: #d4af37; 
     margin-bottom: 10px;
   }
   
   .download-content p {
     font-size: 1rem;
-    color: #7d7d7d; /* Neutral Silver Text */
+    color: #7d7d7d; 
     margin-bottom: 20px;
   }
   
@@ -71,14 +72,14 @@ body {
     color: #ffffff;
     padding: 12px 20px;
     border-radius: 50px;
-    background: linear-gradient(135deg, #d4af37, #c0c0c0); /* Golden to Silver Button */
+    background: linear-gradient(135deg, #d4af37, #c0c0c0); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
     border: 2px solid #d4af37;
   }
   
   .download-button:hover {
-    background: linear-gradient(135deg, #c0c0c0, #d4af37); /* Inverted Gradient */
+    background: linear-gradient(135deg, #c0c0c0, #d4af37); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
   }
@@ -88,4 +89,4 @@ body {
     height: 20px;
     fill: #ffffff;
   }
-  
+   */
