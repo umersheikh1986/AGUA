@@ -1,20 +1,20 @@
-import { HeroSection } from "@/components/HeroSection";
-import { ProfitAbleLoan } from "@/components/ProfitAbleLoan";
-import { ThreeCard } from "@/components/ThreeCard";
-import GettingCards from "@/components/GettingCards";
+import { HeroSection } from "../components/HeroSection";
+import { ProfitAbleLoan } from "../components/ProfitAbleLoan";
+import { ThreeCard } from "../components/ThreeCard";
+import GettingCards from "../components/GettingCards";
 import Image from "next/image";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { Youtube } from "@/components/Youtube";
-import Participate from "@/components/Participate";
-import Partners from "@/components/Partners";
-import Members from "@/components/Members";
-import Followus from "@/components/Followus";
-import CanvasScene from "@/components/Animate";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import { Youtube } from "../components/Youtube";
+import Participate from "../components/Participate";
+import Partners from "../components/Partners";
+import Members from "../components/Members";
+import Followus from "../components/Followus";
+import CanvasScene from "../components/Animate";
 import Link from "next/link";
-import Chart from "@/components/Chart";
-import Distribution from "@/components/Distribution";
-import RoadmapSection from "@/components/Distribution";
+import Chart from "../components/Chart";
+import Distribution from "../components/Distribution";
+import RoadmapSection from "../components/Distribution";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
