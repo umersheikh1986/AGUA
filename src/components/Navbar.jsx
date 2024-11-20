@@ -2,7 +2,7 @@
 import React from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { useRouter } from "next/navigation";
-export const Navbar = () => {
+export default function Navbar  ()  {
   const router = useRouter();
   const handleNavigation = () => {
     router.push("../about");
@@ -196,7 +196,8 @@ export const Navbar = () => {
         className="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow opacity-80 z-50 bg-[#030201]">
         <li className="text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
         <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
+        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>Docs</a></li>
+        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>Ecosystem</a></li>
       </ul>
     </div>
     <img src="/agua-logo.png" className="lg:h-24 lg:w-24 h-12 w-12  lg:ml-12" alt="Flowbite Logo" />
@@ -206,11 +207,13 @@ export const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
       <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
       <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>DOCS</a></li>
-      <li><button onClick={signinNav} className="btn btn-warning mt-2">Sign In</button></li>
+      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Docs</a></li>
+      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Ecosystem</a></li>
+      {/* <li><button onClick={signinNav} className="btn btn-warning mt-2">Sign In</button></li> */}
     </ul>
   </div>
   <div className="navbar-end">
+  <button onClick={signinNav} className="btn btn-warning mr-4 rounded-[20px]">Sign In</button>
   <ConnectWallet
               
                            style={{

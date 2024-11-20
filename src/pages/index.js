@@ -3,7 +3,7 @@ import { ProfitAbleLoan } from "../components/ProfitAbleLoan";
 import { ThreeCard } from "../components/ThreeCard";
 import GettingCards from "../components/GettingCards";
 import Image from "next/image";
-import { Navbar } from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import  Footer  from "../components/Footer/Footer";
 import { Youtube } from "../components/Youtube";
 import Participate from "../components/Participate";

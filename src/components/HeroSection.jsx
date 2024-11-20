@@ -69,18 +69,18 @@ return () => {
   <CanvasScene />
   <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
     <div ref={divleft} className="flex flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg mt-32 sm:mt-32 md:mt-20">
-      <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
-        A STABLE SILVER &
+      <h2 className="text-3xl sm:text-4xl text-white font-bold mb-2">
+      Empowering Decentralized Finance
       </h2>
-      <h2 className="text-3xl sm:text-4xl md:text-6xl text-white font-bold mb-2">
-        GOLD THAT HELPS
+      <h2 className="text-3xl sm:text-4xl text-white font-bold mb-2">
+      with the Stability of Precious
       </h2>
-      <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-yellow-600 my-4">
-        <span className="text-[#c9cbcc] text-2xl sm:text-3xl md:text-5xl">YOU WIN</span> THE GAME
+      <h2 className="text-2xl sm:text-3xl font-semibold text-yellow-600 my-4">
+        <span className="text-[#c9cbcc] text-2xl sm:text-3xl">Metals and</span> DAO for community.
       </h2>
 
       <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      Welcome to AGUA – A New Era of Financial Security. A stablecoin fully backed by silver and gold, seamlessly integrating into the world of decentralized finance (DeFi).
       </p>
 
       <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
@@ -88,13 +88,13 @@ return () => {
     href={"/"}
     className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer whitespace-nowrap"
   >
-    OUR OFFERS
+    Mint Now
   </Link>
   <Link
     href={"/"}
     className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
   >
-    BUY NOW
+    Explore AGUA
   </Link>
 </div>
 

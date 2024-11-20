@@ -368,18 +368,57 @@ export default function Distribution() {
     // </div>
     <div className="mt-20">
       <CanvasScene />
-      <h2 className="text-3xl font-bold text-center mb-4 text-teal-700">ROADMAP</h2>
-         <p className="text-center text-gray-600 mb-10">
+      <h1 className="text-6xl font-bold text-center mb-4 text-teal-700">ROADMAP</h1>
+         <h1 className="text-center text-gray-600 text-2xl mb-10">
            Check the project milestones
-         </p>
+         </h1>
     <ul className="timeline timeline-vertical">
+    <li>
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+    <b>Phase 1 :
+      Foundation and Whitepaper Finalization (Q3 2024)
+    </b>
+    <br />
+    <ul>
+    <li>
+  <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />
+  Whitepaper Completion
+</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Legal and Regulatory Preparation</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Initial Community Building</li>
+    </ul>
+  </div>
+  <div className="timeline-middle">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </div>
+  <hr className="bg-primary h-1 sm:h-2" />
+</li>
+
       <li>
-        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 1 <br />
-          CoralCoin launch
-          <br />
-          PoW starts
-        </div>
+        <hr className="bg-primary h-1 sm:h-2" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -392,10 +431,83 @@ export default function Distribution() {
               clipRule="evenodd"
             />
           </svg>
+        </div>
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <b>Phase 2 :
+      Token Launch and Initial Platform Development (Q4 2024)
+    </b>
+    <br />
+    <ul>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Token launch</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Smart Contract Deployment</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Initial Exchange Listings</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Staking Platform Launch</li>
+    </ul>
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
       <li>
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+    <b>Phase 3 : 
+    Mining Integration and Reserve Management (Q1-Q2 2025)
+    </b>
+    <br />
+    <ul>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Mining Partnerships</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Reserve Establishment</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Smart Contract Enhancements</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Revenue Sharing Implementation</li>
+    </ul>
+  </div>
+  <div className="timeline-middle">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </div>
+  <hr className="bg-primary h-1 sm:h-2" />
+</li>
+<li>
         <hr className="bg-primary h-1 sm:h-2" />
         <div className="timeline-middle">
           <svg
@@ -410,84 +522,82 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 2 <br />
-          Some event
-          <br />
-          Some event
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <b>Phase 4 :
+        Platform Expansion and DeFi Integration (Q3-Q4 2025)
+    </b>
+    <br />
+    <ul>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />DeFi Platform Integration</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Governance Launch</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Advanced Analytics and Reporting</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Community Incentive Programs</li>
+    </ul>
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
       <li>
-        <hr className="bg-primary h-1 sm:h-2" />
-        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 3 <br />
-          Partnerships and event
-          <br />
-          Additional milestones
-        </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <hr className="bg-primary h-1 sm:h-2" />
-      </li>
-      <li>
-        <hr className="bg-primary h-1 sm:h-2" />
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 4 <br />
-          Upcoming developments
-          <br />
-          Future announcements
-        </div>
-        <hr className="bg-primary h-1 sm:h-2" />
-      </li>
-      <li>
-        <hr className="bg-primary h-1 sm:h-2" />
-        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 5 <br />
-          Upcoming developments
-          <br />
-          Future announcements
-        </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <hr className="bg-primary h-1 sm:h-2" />
-      </li>
-      <li>
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+    <b>Phase 5 :
+    Global Expansion and Regulatory Alignment (2026)
+    </b>
+    <br />
+    <ul>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Regulatory Expansion</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Cross-Chain Integration</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Institutional Partnerships</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Global Marketing Campaign</li>
+    </ul>
+  </div>
+  <div className="timeline-middle">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </div>
+  <hr className="bg-primary h-1 sm:h-2" />
+</li>
+<li>
         <hr className="bg-primary h-1 sm:h-2" />
         <div className="timeline-middle">
           <svg
@@ -502,34 +612,33 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 6 <br />
-          Upcoming developments
-          <br />
-          Future announcements
-        </div>
-        <hr className="bg-primary h-1 sm:h-2" />
-      </li>
-      <li>
-        <hr className="bg-primary h-1 sm:h-2" />
-        <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-64 md:text-xl">
-          Phase 7 <br />
-          Upcoming developments
-          <br />
-          Future announcements
-        </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <b>Phase 6 :
+        Continuous Improvement and Ecosystem Growth (2027 and Beyond)
+    </b>
+    <br />
+    <ul>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Platform Upgrades</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Ecosystem Expansion</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Sustainability Initiatives</li>
+      <li> <input
+    type="checkbox"
+    defaultChecked
+    className="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))] mr-2"
+  />Global Adoption Initiatives</li>
+    </ul>
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>

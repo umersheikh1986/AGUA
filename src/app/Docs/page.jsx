@@ -3,11 +3,14 @@ import React from 'react';
 import './style.css';
 import '../../styles/globals.css';
 import Footer from "../../components/Footer/Footer" ;
+import Navbar from "../../components/Navbar";
+
 function page() {
   return (
     <>
+    <Navbar />
     <div class="download-section">
-  <h1 class="card-heading">Audit Report</h1>
+  <h1 class="card-heading mt-35">Audit Report</h1>
   <div class="download-content">
     <h2>Ready to Download?</h2>
     <p>Click the button below to get your file instantly!</p>
@@ -21,9 +24,8 @@ function page() {
       Click Here to Download
     </a>
   </div>
+  <Footer/>
 </div>
-
-<Footer/>
   </>
   )
 }

@@ -5,7 +5,7 @@ import CanvasScene from "../Animate";
   return (
     <div className="w-full overflow-x-hidden pt-10">
       {/* <CanvasScene /> */}
-      <footer className=" w-full text-white dark:bg-gray-900">
+      <footer className=" w-full text-white bg-gray-900">
         {/* <hr className="" /> */}
         <div className="  max-w-full  p-12    bg-white bg-opacity-10 backdrop-blur-sm overflow-x-hidden  py-6 lg:py-16">
           <div className="md:flex md:justify-between">
