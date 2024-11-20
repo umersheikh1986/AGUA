@@ -139,11 +139,11 @@ const divrig = useRef(null);
       alt="Shoes"
       className='' />
   </figure>
-  <div className="card-body">
+  <div className="card-body font-times">
     <h2 className="font-bold text-lg md:text-2xl text-white text-center">
     Martin Mobarak
     </h2>
-    <p className='text-white text-center text-base md:text-xl'>Founder, CEO</p>
+    <p className='text-white font-times text-center text-base md:text-xl'>Founder, CEO</p>
   </div>
 </div>
 
@@ -154,7 +154,7 @@ const divrig = useRef(null);
       alt="Shoes"
       className='' />
   </figure>
-  <div className="card-body">
+  <div className="card-body font-times">
     <h2 className="font-bold text-lg md:text-2xl text-white text-center">
     Oscar Jarquin
     </h2>
@@ -169,7 +169,7 @@ const divrig = useRef(null);
       alt="Shoes"
       className='' />
   </figure>
-  <div className="card-body">
+  <div className="card-body font-times">
     <h2 className="font-bold text-lg md:text-2xl text-white text-center">
     Omar Mobarak
     </h2>
@@ -184,7 +184,7 @@ const divrig = useRef(null);
       alt="Shoes"
       className='' />
   </figure>
-  <div className="card-body">
+  <div className="card-body font-times">
     <h2 className="font-bold text-lg md:text-2xl text-white text-center">
     Bryan Cohen
     </h2>
@@ -199,7 +199,7 @@ const divrig = useRef(null);
       alt="Shoes"
       className='w-full' />
   </figure>
-  <div className="card-body">
+  <div className="card-body font-times">
     <h2 className="font-bold text-lg md:text-2xl text-white text-center">
     Hans Kuhn
     </h2>

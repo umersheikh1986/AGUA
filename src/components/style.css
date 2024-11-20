@@ -202,3 +202,36 @@
     }
   }
   
+
+  .my-link {
+    border-width: 2px;
+    margin-right: 2rem; /* Equivalent to Tailwind's `mr-8` */
+    border-color: white;
+    background: linear-gradient(
+      to right,
+      #353535,
+      #CBCDCF 30%,
+      #6C6C6C 70%
+    );
+    background-blend-mode: multiply;
+    padding: 0.75rem 2.5rem; /* px-10 => 2.5rem, py-3 => 0.75rem */
+    font-size: 1rem; /* Default size equivalent to Tailwind's base */
+    font-weight: 600; /* Font-semibold */
+    color: black;
+    border-radius: 0.125rem; /* Equivalent to Tailwind's rounded-sm */
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (min-width: 640px) { /* Equivalent to Tailwind's sm: */
+    .my-link {
+      padding-top: 1rem; /* sm:py-4 => 1rem */
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .my-link:hover {
+    background-color: #fad55a; /* Equivalent to hover:bg-[#fad55a] */
+  }
+  

@@ -2,6 +2,8 @@
 import React from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import './style.css';
 export default function Navbar  ()  {
   const router = useRouter();
   const handleNavigation = () => {
@@ -194,36 +196,70 @@ export default function Navbar  ()  {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow opacity-80 z-50 bg-[#030201]">
-        <li className="text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
-        <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>Docs</a></li>
-        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-lightgold hover:text-[#949798]"><a>Ecosystem</a></li>
+        <li className="text-2xl text-[#949798] hover:text-lightgold"><a>Home</a></li>
+        <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="text-2xl text-[#949798] hover:text-lightgold"><a>About</a></li>
+        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-[#949798] hover:text-lightgold"><a>Docs</a></li>
+        <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-[#949798] hover:text-lightgold"><a>Ecosystem</a></li>
       </ul>
     </div>
-    <img src="/agua-logo.png" className="lg:h-24 lg:w-24 h-12 w-12  lg:ml-12" alt="Flowbite Logo" />
-    <a className="btn btn-ghost text-sm self-center sm:text-2xl font-semibold whitespace-nowrap text-lightgold hover:text-[#949798]">AGUA</a>
+    <img src="/Agua-new-logo.png" className="lg:h-34 lg:w-65 h-12 w-12  lg:ml-8" alt="Flowbite Logo" />
+    {/* <a className="btn btn-ghost text-sm self-center pr-8 sm:text-2xl font-semibold whitespace-nowrap text-[#949798] hover:text-lightgold">AGUA</a> */}
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Home</a></li>
-      <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>About</a></li>
-      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Docs</a></li>
-      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-lightgold hover:text-[#949798]"><a>Ecosystem</a></li>
+      <li className="block py-2 px-3 text-2xl text-[#949798] hover:text-lightgold"><a>Home</a></li>
+      <li onClick={handleNavigation} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-[#949798] hover:text-lightgold"><a>About</a></li>
+      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-[#949798] hover:text-lightgold"><a>Docs</a></li>
+      <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="block py-2 px-3 text-2xl text-[#949798] hover:text-lightgold"><a>Ecosystem</a></li>
       {/* <li><button onClick={signinNav} className="btn btn-warning mt-2">Sign In</button></li> */}
     </ul>
   </div>
   <div className="navbar-end">
-  <button onClick={signinNav} className="btn btn-warning mr-4 rounded-[20px]">Sign In</button>
-  <ConnectWallet
+  <Link
+  onClick={signinNav}
+    href={"/"}
+    className="mr-8 bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+  >
+    Sign In
+  </Link>
+  {/* <button onClick={signinNav} className="btn btn-warning mr-4 rounded-[20px]">Sign In</button> */}
+  {/* <Link
+    href={"/"}
+    className="border-2 mr-8 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+  > */}
+<Link href={'/'}>
+<ConnectWallet
+      style={{
+        marginRight: "2rem",
+        background: "linear-gradient(to right, #353535, #cbcdcf 30%, #6c6c6c 70%)",
+        backgroundBlendMode: "multiply",
+        padding: "1.20rem 2rem",
+        color: "black",
+        fontWeight: "600",
+        borderRadius: "0.25rem",
+        cursor: "pointer",
+        whiteSpace: "nowrap",
+        transition: "background-color 0.3s ease",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = "#DF2C2B";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = "#DF2C2B";
+      }}
+    />
+</Link>
+    
+  {/* </Link> */}
               
-                           style={{
+                           {/* style={{
                                backgroundColor: '#E5AF1D',
                                fontWeight: 'bold',
                                paddingLeft: '7px',
                                border: '2px solid #534721',
                                borderRadius: '20px',
-                             }}
-                           />
+                             }} */}
+                           
   </div>
 </div>
   );

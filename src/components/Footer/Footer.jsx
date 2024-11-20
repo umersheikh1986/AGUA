@@ -3,7 +3,7 @@ import CanvasScene from "../Animate";
 
  export default function Footer  () {
   return (
-    <div className="w-full overflow-x-hidden pt-10">
+    <div className="w-full overflow-x-hidden pt-10 font-times">
       {/* <CanvasScene /> */}
       <footer className=" w-full text-white bg-gray-900">
         {/* <hr className="" /> */}

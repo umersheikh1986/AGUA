@@ -374,7 +374,7 @@ export default function Distribution() {
          </h1>
     <ul className="timeline timeline-vertical">
     <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
     <b>Phase 1 :
       Foundation and Whitepaper Finalization (Q3 2024)
     </b>
@@ -432,7 +432,7 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
         <b>Phase 2 :
       Token Launch and Initial Platform Development (Q4 2024)
     </b>
@@ -463,7 +463,7 @@ export default function Distribution() {
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
       <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
     <b>Phase 3 : 
     Mining Integration and Reserve Management (Q1-Q2 2025)
     </b>
@@ -522,7 +522,7 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
         <b>Phase 4 :
         Platform Expansion and DeFi Integration (Q3-Q4 2025)
     </b>
@@ -553,7 +553,7 @@ export default function Distribution() {
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
       <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
     <b>Phase 5 :
     Global Expansion and Regulatory Alignment (2026)
     </b>
@@ -612,7 +612,7 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl">
+        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
         <b>Phase 6 :
         Continuous Improvement and Ecosystem Growth (2027 and Beyond)
     </b>

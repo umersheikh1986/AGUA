@@ -291,7 +291,7 @@ const SignIn = () => {
                       type="submit"
                       onClick={SignUp}
                       className="w-full cursor-pointer btn btn-warning rounded-lg border p-4 text-white transition hover:bg-opacity-90">
-                      Login with Wallet Adress
+                      Login with Wallet Address
                       </button>
                  </div>
 
