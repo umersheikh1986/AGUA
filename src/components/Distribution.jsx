@@ -366,15 +366,22 @@ export default function Distribution() {
     //     </div>
     //   </div>
     // </div>
-    <div className="mt-20">
-      <CanvasScene />
-      <h1 className="text-6xl font-bold text-center mb-4 text-teal-700">ROADMAP</h1>
-         <h1 className="text-center text-gray-600 text-2xl mb-10">
+    <>
+    <div className="">
+      <hr/>
+
+
+
+
+
+      {/* <CanvasScene /> */}
+      <h1 className="text-4xl font-bold text-center mb-4 text-teal-700">ROADMAP</h1>
+         <h1 className="text-center text-gray-600 text-xl mb-10">
            Check the project milestones
          </h1>
-    <ul className="timeline timeline-vertical">
+    {/* <ul className="timeline timeline-vertical">
     <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+  <div className="timeline-start timeline-box p-4 text-base  sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
     <b>Phase 1 :
       Foundation and Whitepaper Finalization (Q3 2024)
     </b>
@@ -432,7 +439,7 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+        <div className="timeline-end timeline-box p-4 text-base sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
         <b>Phase 2 :
       Token Launch and Initial Platform Development (Q4 2024)
     </b>
@@ -462,8 +469,11 @@ export default function Distribution() {
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
+
+
+
       <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+  <div className="timeline-start timeline-box p-8 text-base sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
     <b>Phase 3 : 
     Mining Integration and Reserve Management (Q1-Q2 2025)
     </b>
@@ -507,6 +517,7 @@ export default function Distribution() {
   </div>
   <hr className="bg-primary h-1 sm:h-2" />
 </li>
+
 <li>
         <hr className="bg-primary h-1 sm:h-2" />
         <div className="timeline-middle">
@@ -522,9 +533,8 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
-        <b>Phase 4 :
-        Platform Expansion and DeFi Integration (Q3-Q4 2025)
+        <div className="timeline-end timeline-box p-4 text-base sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+        <b>Phase 4: Platform Expansion and DeFi Integration (Q3-Q4 2025)
     </b>
     <br />
     <ul>
@@ -552,10 +562,10 @@ export default function Distribution() {
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
+
       <li>
-  <div className="timeline-start timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
-    <b>Phase 5 :
-    Global Expansion and Regulatory Alignment (2026)
+  <div className="timeline-start timeline-box p-8 text-base sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+    <b>Phase 5: Global Expansion and Regulatory Alignment (2026)
     </b>
     <br />
     <ul>
@@ -597,6 +607,8 @@ export default function Distribution() {
   </div>
   <hr className="bg-primary h-1 sm:h-2" />
 </li>
+
+
 <li>
         <hr className="bg-primary h-1 sm:h-2" />
         <div className="timeline-middle">
@@ -612,9 +624,8 @@ export default function Distribution() {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box p-4 text-base sm:p-6 sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
-        <b>Phase 6 :
-        Continuous Improvement and Ecosystem Growth (2027 and Beyond)
+        <div className="timeline-end timeline-box p-4 text-base sm:text-lg sm:w-48 md:w-100 md:text-xl font-times">
+        <b>Phase 6: Continuous Improvement and Ecosystem Growth (2027 and Beyond)
     </b>
     <br />
     <ul>
@@ -642,8 +653,131 @@ export default function Distribution() {
         </div>
         <hr className="bg-primary h-1 sm:h-2" />
       </li>
-    </ul>
-  </div>
+
+
+
+    </ul> */}
+    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="lightblue"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end text-white">
+      <div className="text-2xl ">Phase 1: Foundation and Whitepaper Finalization (Q3 2024)</div>
+      Whitepaper Completion<br />
+      Legal and Regulatory Preparation<br />
+      Initial Community Building
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="lightblue"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end mb-10 text-white">
+      <div className="text-2xl ">Phase 2: Token Launch and Initial Platform Development (Q4 2024)</div>
+      Token launch<br />
+      Smart Contract Deployment<br />
+      Initial Exchange Listings<br />
+      Staking Platform Launch
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="lightblue"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end text-white">
+    <div className="text-2xl ">Phase 3: Mining Integration and Reserve Management (Q1-Q2 2025)</div>
+    Mining Partnerships<br />
+    Reserve Establishment<br />
+    Smart Contract Enhancements<br />
+    Revenue Sharing Implementation
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="lightblue"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end mb-10 text-white">
+    <div className="text-2xl ">Phase 4: Platform Expansion and DeFi Integration (Q3-Q4 2025)</div>
+    DeFi Platform Integration<br />
+    Governance Launch<br />
+    Advanced Analytics and Reporting<br />
+    Community Incentive Programs
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="lightblue"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end text-white">
+    <div className="text-2xl ">Phase 5: Global Expansion and Regulatory Alignment (2026)</div>
+    Regulatory Expansion<br />
+    Cross-Chain Integration<br />
+    Institutional Partnerships<br />
+    Global Marketing Campaign
+    </div>
+  </li>
   
+  
+</ul>
+  </div>
+
+
+  
+  <hr className="border-[#D2BA57] mt-10" />
+  </>
   );
 }

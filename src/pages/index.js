@@ -3,7 +3,7 @@ import { ProfitAbleLoan } from "../components/ProfitAbleLoan";
 import { ThreeCard } from "../components/ThreeCard";
 import GettingCards from "../components/GettingCards";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
+import Navb from "../components/Navb";
 import  Footer  from "../components/Footer/Footer";
 import { Youtube } from "../components/Youtube";
 import Participate from "../components/Participate";
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <main
-      className="overflow-hidden gradient-animation"
+      className="overflow-hidden"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
@@ -56,12 +56,12 @@ export default function Home() {
     }
   }
 `}</style>
-        <Navbar />
+        <Navb />
         <HeroSection />
         <ThreeCard />
     
       </main>
-      <main className="gradient-animation">
+      <main className="">
       <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;

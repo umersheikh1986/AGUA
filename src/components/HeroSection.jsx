@@ -65,18 +65,17 @@ return () => {
 }, []);
   return (
     <>
-<div className="flex flex-col max-w-full h-auto max-h-[800px]  sm:max-h-[1100px]">
-  <CanvasScene />
+<div className="flex flex-col max-w-full h-auto max-h-[800px] mb-40  sm:max-h-[1100px]">
+  {/* <CanvasScene /> */}
   <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
-    <div ref={divleft} className="flex flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg mt-32 sm:mt-32 md:mt-20">
-      <h2 className="text-3xl sm:text-4xl text-white font-bold mb-2">
-      Empowering Decentralized Finance
+    <div ref={divleft} className="flex w-5/6 flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg  md:mt-10">
+      <h2 className="text-xl sm:text-4xl text-white font-bold mb-2">
+      Empowering Decentralized Finance with the Stability of Precious
       </h2>
-      <h2 className="text-3xl sm:text-4xl text-white font-bold mb-2">
-      with the Stability of Precious
+      <h2 className="text-xl sm:text-4xl text-white font-bold mb-2">
       </h2>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-yellow-600 my-4">
-        <span className="text-[#c9cbcc] text-2xl sm:text-3xl">Metals and</span> DAO for community.
+      <h2 className="text-lg sm:text-3xl font-semibold text-yellow-600">
+        <span className="text-[#c9cbcc] text-lg sm:text-3xl">Metals and</span> DAO for community.
       </h2>
 
       <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed">
@@ -86,13 +85,13 @@ return () => {
       <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
   <Link
     href={"/"}
-    className="border-2 px-10 sm:px-16 md:px-20 py-3 sm:py-4 bg-black text-white font-semibold rounded-sm hover:bg-gray-800 cursor-pointer whitespace-nowrap"
+    className="border-2 px-6 sm:px-10 md:px-20 py-1 sm:py-4 bg-black text-white sm:font-semibold rounded-sm hover:bg-gray-800 cursor-pointer whitespace-nowrap"
   >
     Mint Now
   </Link>
   <Link
     href={"/"}
-    className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 sm:px-16 md:px-20 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+    className="border-2 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-6 sm:px-10 md:px-20 py-1 sm:py-4 text-black sm:font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
   >
     Explore AGUA
   </Link>
@@ -102,7 +101,7 @@ return () => {
 
     {/* Second Grid Item */}
     <div ref={divright} className="relative flex justify-center items-center sm:mb-20 mb-20 md:mt-0">
-      <div className="relative w-full h-[300px] md:h-full flex justify-center items-center">
+      <div className="relative w-80 sm:w-150 h-[300px] md:h-full flex justify-center items-center">
         <Swiper
           effect={"cube"}
           grabCursor={true}
@@ -121,10 +120,10 @@ return () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="/gold.png" alt="Gold" />
+            <img className="lg:h-[400px] sm:h-[300px] h-[150px]" src="/gold.png" alt="Gold" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/silver.png" alt="Silver" />
+            <img className="lg:h-[400px] sm:h-[300px] h-[150px]" src="/silver.png" alt="Silver" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -60,7 +60,7 @@ const Followus = () => {
 </div> */}
 
 <div ref={divRes} className="bg-customgray mt-20 rounded-[10px]  ">
-<CanvasScene />
+{/* <CanvasScene /> */}
 <div className="text-center text-white text-2xl md:text-4xl pt-10 font-times font-extrabold">
   Stay tuned with our latest project<br /> updates or follow us on any of the social<br /> media channels below
 </div>

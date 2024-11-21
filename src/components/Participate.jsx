@@ -118,7 +118,7 @@ function Participate() {
 //         </div>
 //     </div>
 <div className="sm:flex flex-col lg:flex-row justify-center h-auto lg:h-[900px] p-4 lg:p-10">
-  <div ref={divleft} className="text-white z-10 p-6 lg:p-10 font-times h-auto lg:h-[800px] bg-[#493E1D] shadow-slate-600 w-full lg:w-2/5 rounded-2xl mb-6 lg:mb-0">
+  <div ref={divleft} className="text-white z-10 p-6 lg:p-10 font-times h-auto lg:h-[700px] bg-[#493E1D] shadow-slate-600 w-full lg:w-2/5 rounded-2xl mb-6 lg:mb-0">
     <img className="w-16 h-16 lg:w-20 lg:h-20 mx-auto" src="https://agua-two.vercel.app/agua-logo.png" alt="Logo" />
     <br />
     <p className="font-bold text-lg text-center lg:text-left">
@@ -144,7 +144,7 @@ function Participate() {
     <p className="text-[#C7C7C7] text-center lg:text-left">1 BNB = 18 AGC</p>
   </div>
 
-  <div ref={divright} className="font-times ml-2 z-0 bg-[#493E1D] text-white p-6 lg:p-10 w-full lg:w-2/4 h-auto lg:h-[700px] rounded-2xl">
+  <div ref={divright} className="font-times ml-2 z-0 bg-[#493E1D] text-white p-6 lg:p-10 w-full lg:w-2/4 h-auto lg:h-[600px] rounded-2xl">
     <p className="font-bold text-lg text-center lg:text-left text-[#C7C7C7]">PARTICIPATE IN OUR TOKEN SALE</p>
     <br />
     <p className="font-bold text-lg text-center lg:text-left">ICO Ends in:</p>

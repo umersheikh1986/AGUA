@@ -176,7 +176,7 @@ export default function Navbar  ()  {
   //   </nav>
   // </div>
 
-  <div className="navbar fixed opacity-80 z-50 border-b-lightgold border-x-black border-t-black border-2 bg-[#0F0D06]">
+  <div className="navbar opacity-80 z-50 border-b-lightgold border-x-black border-t-black border-2 bg-[#0F0D06]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -202,7 +202,7 @@ export default function Navbar  ()  {
         <li onClick={handleNavigatione} style={{ cursor: "pointer" }} className="text-2xl text-[#949798] hover:text-lightgold"><a>Ecosystem</a></li>
       </ul>
     </div>
-    <img src="/Agua-new-logo.png" className="lg:h-34 lg:w-65 h-12 w-12  lg:ml-8" alt="Flowbite Logo" />
+    <img src="/Agua-new-logo.png" className="lg:h-24 lg:w-65 h-20 w-40 pr-12" alt="Flowbite Logo" />
     {/* <a className="btn btn-ghost text-sm self-center pr-8 sm:text-2xl font-semibold whitespace-nowrap text-[#949798] hover:text-lightgold">AGUA</a> */}
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -218,34 +218,28 @@ export default function Navbar  ()  {
   <Link
   onClick={signinNav}
     href={"/"}
-    className="mr-8 bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-10 py-3 sm:py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+    className="mr-2 bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-2 lg:px-10 py-3 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
   >
     Sign In
   </Link>
-  {/* <button onClick={signinNav} className="btn btn-warning mr-4 rounded-[20px]">Sign In</button> */}
-  {/* <Link
-    href={"/"}
-    className="border-2 mr-8 border-white bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
-  > */}
 <Link href={'/'}>
 <ConnectWallet
       style={{
-        marginRight: "2rem",
-        background: "linear-gradient(to right, #353535, #cbcdcf 30%, #6c6c6c 70%)",
-        backgroundBlendMode: "multiply",
-        padding: "1.20rem 2rem",
-        color: "black",
-        fontWeight: "600",
-        borderRadius: "0.25rem",
-        cursor: "pointer",
-        whiteSpace: "nowrap",
-        transition: "background-color 0.3s ease",
+        background: "linear-gradient(to right, #353535, #cbcdcf 30%, #6c6c6c 70%)", // `bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70%`
+        backgroundBlendMode: "multiply", // `bg-blend-multiply`
+        padding:   `px-2  lg:px-10 py-2 lg:py-4`,
+        color: "black", // `text-black`
+        fontWeight: "600", // `font-semibold`
+        borderRadius: "0.25rem", // `rounded-sm`
+        cursor: "pointer", // `cursor-pointer`
+        whiteSpace: "nowrap", // `whitespace-nowrap`
+        transition: "background-color 0.3s ease", // Smooth hover transition
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.backgroundColor = "#DF2C2B";
+        e.currentTarget.style.backgroundColor = "#fad55a"; // Hover effect: `hover:bg-[#fad55a]`
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.backgroundColor = "#DF2C2B";
+        e.currentTarget.style.backgroundColor = ""; // Revert hover effect
       }}
     />
 </Link>
