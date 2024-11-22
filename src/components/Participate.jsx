@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect,useRef } from 'react';
+import CanvasScene from './Animate';
 
 function Participate() {
   const divleft = useRef(null);
@@ -118,6 +119,7 @@ function Participate() {
 //         </div>
 //     </div>
 <div className="sm:flex flex-col lg:flex-row justify-center h-auto lg:h-[900px] p-4 lg:p-10">
+  <CanvasScene />
   <div ref={divleft} className="text-white z-10 p-6 lg:p-10 font-times h-auto lg:h-[700px] bg-[#493E1D] shadow-slate-600 w-full lg:w-2/5 rounded-2xl mb-6 lg:mb-0">
     <img className="w-16 h-16 lg:w-20 lg:h-20 mx-auto" src="https://agua-two.vercel.app/agua-logo.png" alt="Logo" />
     <br />

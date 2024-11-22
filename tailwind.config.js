@@ -128,6 +128,7 @@ module.exports = {
                                colors: {
                                  customBrown: '#25200F',
                                  customgold: '#524621',
+                                 roadmap: '#37766E',
                                  boxdark: "#24303F",
                                  tiltcard: '#1A1A1A',
                                  lightgold: '#D2BA57'

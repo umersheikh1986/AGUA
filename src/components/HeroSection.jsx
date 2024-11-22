@@ -66,7 +66,7 @@ return () => {
   return (
     <>
 <div className="flex flex-col max-w-full h-auto max-h-[800px] mb-40  sm:max-h-[1100px]">
-  {/* <CanvasScene /> */}
+  <CanvasScene />
   <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
     <div ref={divleft} className="flex w-5/6 flex-col justify-center p-5 sm:p-10 md:ml-20 z-10 rounded-lg  md:mt-10">
       <h2 className="text-xl sm:text-4xl text-white font-bold mb-2">
@@ -101,7 +101,7 @@ return () => {
 
     {/* Second Grid Item */}
     <div ref={divright} className="relative flex justify-center items-center sm:mb-20 mb-20 md:mt-0">
-      <div className="relative w-80 sm:w-150 h-[300px] md:h-full flex justify-center items-center">
+      <div className="relative w-70 sm:w-150 h-[300px] md:h-full flex justify-center items-center">
         <Swiper
           effect={"cube"}
           grabCursor={true}
@@ -120,10 +120,10 @@ return () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img className="lg:h-[400px] sm:h-[300px] h-[150px]" src="/gold.png" alt="Gold" />
+            <img className="lg:h-[400px] sm:h-[300px] h-[250px] mt-8" src="/gold.png" alt="Gold" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="lg:h-[400px] sm:h-[300px] h-[150px]" src="/silver.png" alt="Silver" />
+            <img className="lg:h-[400px] sm:h-[300px] h-[250px] mt-8" src="/silver.png" alt="Silver" />
           </SwiperSlide>
         </Swiper>
       </div>

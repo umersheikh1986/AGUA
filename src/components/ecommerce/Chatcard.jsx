@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const chatData = [
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Devid Heilo",
     text: "How are you?",
     time: 12,
@@ -11,7 +11,7 @@ const chatData = [
     dot: 3,
   },
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Henry Fisher",
     text: "Waiting for you!",
     time: 12,
@@ -19,7 +19,7 @@ const chatData = [
     dot: 1,
   },
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Jhon Doe",
     text: "What's up?",
     time: 32,
@@ -27,7 +27,7 @@ const chatData = [
     dot: 3,
   },
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Jane Doe",
     text: "Great",
     time: 32,
@@ -35,7 +35,7 @@ const chatData = [
     dot: 6,
   },
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Jhon Doe",
     text: "How are you?",
     time: 32,
@@ -43,7 +43,7 @@ const chatData = [
     dot: 3,
   },
   {
-    avatar: "/images/user/user-01.png",
+    avatar: "/user-02.png",
     name: "Jhon Doe",
     text: "How are you?",
     time: 32,

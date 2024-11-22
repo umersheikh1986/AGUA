@@ -368,14 +368,14 @@ export default function Distribution() {
     // </div>
     <>
     <div className="">
-      <hr/>
+    
 
 
 
 
 
-      {/* <CanvasScene /> */}
-      <h1 className="text-4xl font-bold text-center mb-4 text-teal-700">ROADMAP</h1>
+      <CanvasScene />
+      <h1 className="text-4xl font-bold text-center mb-4 text-[#9ACD32]">ROADMAP</h1>
          <h1 className="text-center text-gray-600 text-xl mb-10">
            Check the project milestones
          </h1>
@@ -663,7 +663,7 @@ export default function Distribution() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
-        fill="lightblue"
+        fill="yellowgreen"
         className="h-5 w-5">
         <path
           fillRule="evenodd"
@@ -685,7 +685,7 @@ export default function Distribution() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
-        fill="lightblue"
+        fill="yellowgreen"
         className="h-5 w-5">
         <path
           fillRule="evenodd"
@@ -708,7 +708,7 @@ export default function Distribution() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
-        fill="lightblue"
+        fill="greenyellow"
         className="h-5 w-5">
         <path
           fillRule="evenodd"
@@ -731,7 +731,7 @@ export default function Distribution() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
-        fill="lightblue"
+        fill="yellowgreen"
         className="h-5 w-5">
         <path
           fillRule="evenodd"
@@ -754,7 +754,7 @@ export default function Distribution() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
-        fill="lightblue"
+        fill="yellowgreen"
         className="h-5 w-5">
         <path
           fillRule="evenodd"

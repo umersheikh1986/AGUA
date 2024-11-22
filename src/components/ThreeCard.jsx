@@ -330,7 +330,6 @@ const divrig = useRef(null);
     </div>
    </div>
   </div> */}
-  <hr />
 
   
   <div className="mx-auto py-10 sm:py-20">

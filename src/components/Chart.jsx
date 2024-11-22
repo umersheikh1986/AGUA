@@ -38,7 +38,7 @@ function Chart() {
         { country: "FUTURE DEVELOPMENT AND MARKETING", litres: 52.02,  color: am4core.color("#9e760b")  },
         { country: "TEAM ALLOCATION ", litres: 60.69,  color: am4core.color(" #664c07")  },
         { country: "Pre-sale", litres: 86.7,  color: am4core.color(" #473504") },
-        { country: "BURNING", litres: 138.72,  color: am4core.color(" #2e2305")  },
+        { country: "BURNING", litres: 138.72,  color: am4core.color("#9ACD32")  },
         { country: "REWARD FOR ECOSYSTEM ", litres: 433.5,  color: am4core.color("#211904")  },
       ];
 
@@ -195,7 +195,7 @@ const divright = useRef(null);
 
 
 <div className="flex flex-col lg:flex-row mt-20 w-full h-auto space-y-10 lg:space-y-0 lg:space-x-20 justify-center items-center">
-  {/* Chart Section */}
+  <CanvasScene />
 
 
 
