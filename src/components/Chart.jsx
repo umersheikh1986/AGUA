@@ -195,7 +195,7 @@ const divright = useRef(null);
 
 
 <div className="flex flex-col lg:flex-row mt-20 w-full h-auto space-y-10 lg:space-y-0 lg:space-x-20 justify-center items-center">
-  <CanvasScene />
+  {/* <CanvasScene /> */}
 
 
 

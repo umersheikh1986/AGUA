@@ -128,7 +128,7 @@ const ChartOne = () => {
 //   ];
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
+    <div className="col-span-12 rounded-sm border border-stroke bg-[#D2D8E1] px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
@@ -137,7 +137,7 @@ const ChartOne = () => {
             </span>
             <div className="w-full">
               <p className="font-semibold text-primary">Total Revenue</p>
-              <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+              <p className="text-sm font-medium dark:text-white">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
           <div className="flex min-w-47.5">
@@ -146,7 +146,7 @@ const ChartOne = () => {
             </span>
             <div className="w-full">
               <p className="font-semibold text-secondary">Total Sales</p>
-              <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+              <p className="text-sm font-medium dark:text-white">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
         </div>

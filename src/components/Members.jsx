@@ -114,7 +114,7 @@ const divrig = useRef(null);
   return (
     <>
     <div>
-      <CanvasScene />
+      {/* <CanvasScene /> */}
         <p className='text-center text-gray-300 font-bold mt-10 font-times '>OUR AMAZING</p>
         <p className='text-center text-white text-4xl font-times font-extrabold'>Team Of Experts</p>
     </div>

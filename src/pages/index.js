@@ -10,11 +10,11 @@ import Participate from "../components/Participate";
 import Partners from "../components/Partners";
 import Members from "../components/Members";
 import Followus from "../components/Followus";
-import CanvasScene from "../components/Animate";
 import Link from "next/link";
 import Chart from "../components/Chart";
 import Distribution from "../components/Distribution";
 import RoadmapSection from "../components/Distribution";
+import CanvasScene from "../components/Animate";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <main
-      className="overflow-hidden gradient-animation"
+      className="overflow-hidden"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
@@ -57,11 +57,14 @@ export default function Home() {
   }
 `}</style>
         <Navb />
+        {/* <CanvasScene /> */}
         <HeroSection />
+        {/* <CanvasScene /> */}
         <ThreeCard />
+        {/* <CanvasScene /> */}
     
       </main>
-      <main className="gradient-animation">
+      <main className="">
       <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
@@ -79,11 +82,15 @@ export default function Home() {
     }
   }
 `}</style>
-
+      {/* <CanvasScene /> */}
       <Youtube />
+      {/* <CanvasScene /> */}
       <Distribution />
+      {/* <CanvasScene /> */}
         <Chart />
+        {/* <CanvasScene /> */}
         <Members />
+        {/* <CanvasScene /> */}
         <Partners />
         
       </main>

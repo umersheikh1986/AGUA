@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const brandData = [
   {
@@ -44,33 +45,37 @@ const brandData = [
 ];
 
 const TableOne = () => {
+  let router = useRouter();
+  const profile = () => {
+    router.push('../../profile')
+  }
   return (
-    <div className="rounded-sm border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+    <div className="rounded-b-xl border border-[#D2D8E1] bg-[#D2D8E1] px-5 pb-2.5 pt-6 shadow-default dark:border-[#24303F] dark:bg-boxdark sm:px-7.5 xl:pb-1">
       <h4 className="mb-6 text-xl font-semibold text-black dark:text-white"></h4>
 
       <div className="flex flex-col">
-        <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
+        <div className="grid grid-cols-3 rounded-sm bg-[#D2D8E1] border border-x-[#D2D8E1] border-t-[#D2D8E1] border-b-[#242C36] dark:border-x-[#24303F]  dark:border-t-[#24303F] dark:border-b-[#D2D8E1] dark:bg-boxdark sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">User</h5>
+            <h5 className="text-sm font-medium uppercase dark:text-white xsm:text-base">User</h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
+            <h5 className="text-sm font-medium dark:text-white uppercase xsm:text-base">
               Account
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
+            <h5 className="text-sm dark:text-white font-medium uppercase xsm:text-base">
               Current Pending
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
-            <h5 className="text-sm font-medium uppercase xsm:text-base">
+            <h5 className="text-sm dark:text-white font-medium uppercase xsm:text-base">
               Proceed
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Proceed
+              
             </h5>
           </div>
         </div>
@@ -106,7 +111,8 @@ const TableOne = () => {
             </div>
 
             <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-              <p className="text-meta-5">{brand.conversion}%</p>
+              {/* <p className="text-meta-5">{brand.conversion}%</p> */}
+              <button onClick={profile} className="btn btn-neutral">Open</button>
             </div>
           </div>
         ))}

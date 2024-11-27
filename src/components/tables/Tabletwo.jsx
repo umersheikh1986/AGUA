@@ -37,28 +37,28 @@ const productData = [
 
 const TableTwo = () => {
   return (
-    <div id="Black" className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div id="Black" className="rounded-b-xl border border-[#D2D8E1] bg-[#D2D8E1] shadow-default dark:border-[#24303F] dark:bg-boxdark">
       <div className="px-4 py-6 md:px-6 xl:px-7.5">
-        <h4 className="text-xl font-semibold text-black dark:text-white">
+        <h4 className="text-xl font-semibold text-gray-500 dark:text-white">
           Black Listed
         </h4>
       </div>
 
       <div className="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
         <div className="col-span-3 flex items-center">
-          <p className="font-medium">Product Name</p>
+          <p className="font-medium dark:text-white">Product Name</p>
         </div>
         <div className="col-span-2 hidden items-center sm:flex">
-          <p className="font-medium">Category</p>
+          <p className="font-medium dark:text-white">Category</p>
         </div>
         <div className="col-span-1 flex items-center">
-          <p className="font-medium">Price</p>
+          <p className="font-medium dark:text-white">Price</p>
         </div>
         <div className="col-span-1 flex items-center">
-          <p className="font-medium">Sold</p>
+          <p className="font-medium dark:text-white">Sold</p>
         </div>
         <div className="col-span-1 flex items-center">
-          <p className="font-medium">Profit</p>
+          <p className="font-medium dark:text-white">Profit</p>
         </div>
       </div>
 

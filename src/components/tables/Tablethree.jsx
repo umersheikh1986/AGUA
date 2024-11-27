@@ -29,15 +29,15 @@ const packageData = [
     return (
       <div
         id="users"
-        className="rounded-sm border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+        className="rounded-b-xl border border-[#D2D8E1] bg-[#D2D8E1] px-5 pb-2.5 pt-6 shadow-default dark:border-[#24303F] dark:bg-boxdark sm:px-7.5 xl:pb-1"
       >
-        <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
+        <h4 className="mb-6 text-xl font-semibold text-gray-500 dark:text-white">
           Users
         </h4>
         <div className="max-w-full overflow-x-auto">
           <table className="w-full table-auto">
             <thead>
-              <tr className="bg-gray-2 text-left dark:bg-meta-4">
+              <tr className="bg-[#D2D8E1] border border-x-[#D2D8E1] border-t-[#D2D8E1] border-b-[#24303F] dark:border-x-[#24303F] dark:border-t-[#24303F] dark:border-b-[#D2D8E1] text-left dark:bg-[#24303F]">
                 <th className="min-w-[220px] px-4 py-4 font-medium text-black dark:text-white xl:pl-11">
                   Package
                 </th>
@@ -59,7 +59,7 @@ const packageData = [
                     <h5 className="font-medium text-black dark:text-white">
                       {packageItem.name}
                     </h5>
-                    <p className="text-sm">${packageItem.price}</p>
+                    <p className="text-sm dark:text-white">${packageItem.price}</p>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
                     <p className="text-black dark:text-white">
@@ -83,7 +83,7 @@ const packageData = [
                     <div className="flex items-center space-x-3.5">
                       <button className="hover:text-primary">
                         <svg
-                          className="fill-current"
+                          className="fill-current dark:text-white"
                           width="18"
                           height="18"
                           viewBox="0 0 18 18"

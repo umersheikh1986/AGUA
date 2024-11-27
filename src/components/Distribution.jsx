@@ -374,7 +374,7 @@ export default function Distribution() {
 
 
 
-      <CanvasScene />
+      {/* <CanvasScene /> */}
       <h1 className="text-4xl font-bold text-center mb-4 text-[#9ACD32]">ROADMAP</h1>
          <h1 className="text-center text-gray-600 text-xl mb-10">
            Check the project milestones

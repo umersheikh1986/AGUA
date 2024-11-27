@@ -38,7 +38,7 @@ export const Youtube = () => {
 
 
 <div ref={divright} className="flex items-center justify-center h-screen px-4">
-  <CanvasScene />
+  {/* <CanvasScene /> */}
   {/* Video Container */}
   <div className="w-full max-w-[1000px] max-h-[800px] ">
     <div
