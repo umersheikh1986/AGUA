@@ -1,77 +1,100 @@
 "use client";
 
 import React from "react";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 
-// const ReactApexChart = dynamic(() => import("react-apexcharts"), {
-//   ssr: false,
-// });
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
-// const options = {
-//   colors: ["#3C50E0", "#80CAEE"],
-//   chart: {
-//     fontFamily: "Satoshi, sans-serif",
-//     type: "bar",
-//     height: 335,
-//     stacked: true,
-//     toolbar: {
-//       show: false,
-//     },
-//     zoom: {
-//       enabled: false,
-//     },
-//   },
-//   responsive: [
-//     {
-//       breakpoint: 1536,
-//       options: {
-//         plotOptions: {
-//           bar: {
-//             borderRadius: 0,
-//             columnWidth: "25%",
-//           },
-//         },
-//       },
-//     },
-//   ],
-//   plotOptions: {
-//     bar: {
-//       horizontal: false,
-//       borderRadius: 0,
-//       columnWidth: "25%",
-//       borderRadiusApplication: "end",
-//       borderRadiusWhenStacked: "last",
-//     },
-//   },
-//   dataLabels: {
-//     enabled: false,
-//   },
-//   xaxis: {
-//     categories: ["M", "T", "W", "T", "F", "S", "S"],
-//   },
-//   legend: {
-//     position: "top",
-//     horizontalAlign: "left",
-//     fontFamily: "Satoshi",
-//     fontWeight: 500,
-//     fontSize: "14px",
-//   },
-//   fill: {
-//     opacity: 1,
-//   },
-// };
+const options = {
+  colors: ["#3C50E0", "#80CAEE"],
+  chart: {
+    fontFamily: "Satoshi, sans-serif",
+    type: "bar",
+    height: 335,
+    stacked: true,
+    toolbar: {
+      show: false,
+    },
+    zoom: {
+      enabled: false,
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 1536,
+      options: {
+        plotOptions: {
+          bar: {
+            borderRadius: 0,
+            columnWidth: "25%",
+          },
+        },
+      },
+    },
+  ],
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      borderRadius: 0,
+      columnWidth: "25%",
+      borderRadiusApplication: "end",
+      borderRadiusWhenStacked: "last",
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  xaxis: {
+    categories: ["M", "T", "W", "T", "F", "S", "S"],
+    labels: {
+      style: {
+        colors: "#6B7280", 
+        fontSize: "12px", 
+      },
+    },
+  },
+  yaxis: {
+    labels: {
+      style: {
+        colors: "#6B7280", 
+        fontSize: "12px", 
+      },
+    },
+  },
+  legend: {
+    position: "top",
+    horizontalAlign: "left",
+    fontFamily: "Satoshi",
+    fontWeight: 500,
+    fontSize: "14px",
+    labels: {
+      colors: "#6B7280", 
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+};
 
 const ChartTwo = () => {
-//   const series = [
-//     {
-//       name: "Sales",
-//       data: [44, 55, 41, 67, 22, 43, 65],
-//     },
-//     {
-//       name: "Revenue",
-//       data: [13, 23, 20, 8, 13, 27, 15],
-//     },
-//   ];
+  const series = [
+    {
+      name: "Sales",
+      labels: {
+        style: {
+          colors: "#6B7280", 
+          fontSize: "12px", 
+        },
+      },
+      data: [44, 55, 41, 67, 22, 43, 65],
+    },
+    {
+      name: "Revenue",
+      data: [13, 23, 20, 8, 13, 27, 15],
+    },
+  ];
 
   return (
     <div className="col-span-12 rounded-xl border border-stroke bg-[#D2D8E1] p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
@@ -86,7 +109,7 @@ const ChartTwo = () => {
             <select
               name="#"
               id="#"
-              className="relative z-20 inline-flex dark:text-white appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
+              className="relative z-20 dark:text-white inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
             >
               <option value="" className="dark:bg-boxdark dark:text-white">
                 This Week
@@ -115,13 +138,13 @@ const ChartTwo = () => {
 
       <div>
         <div id="chartTwo" className="-mb-9 -ml-5">
-          {/* <ReactApexChart
+          <ReactApexChart
             options={options}
             series={series}
             type="bar"
             height={350}
             width={"100%"}
-          /> */}
+          />
         </div>
       </div>
     </div>

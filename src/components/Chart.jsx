@@ -36,10 +36,10 @@ function Chart() {
         { country: "Private sale", litres: 43.35,  color: am4core.color("#edb318")  },
         { country: "PANCAKE SWAP", litres: 52.02,  color: am4core.color("#cf9b10")  },
         { country: "FUTURE DEVELOPMENT AND MARKETING", litres: 52.02,  color: am4core.color("#9e760b")  },
-        { country: "TEAM ALLOCATION ", litres: 60.69,  color: am4core.color(" #664c07")  },
-        { country: "Pre-sale", litres: 86.7,  color: am4core.color(" #473504") },
-        { country: "BURNING", litres: 138.72,  color: am4core.color("#9ACD32")  },
-        { country: "REWARD FOR ECOSYSTEM ", litres: 433.5,  color: am4core.color("#211904")  },
+        { country: "TEAM ALLOCATION ", litres: 60.69,  color: am4core.color("#664c07")  },
+        { country: "Pre-sale", litres: 86.7,  color: am4core.color("#473504") },
+        { country: "BURNING", litres: 138.72,  color: am4core.color("#717171")  },
+        { country: "REWARD FOR ECOSYSTEM ", litres: 433.5,  color: am4core.color("#BEBEBE")  },
       ];
 
       chart

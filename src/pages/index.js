@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <main
-      className="overflow-hidden"
+      className="overflow-hidden gradient-animation"
         // style={{
         //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
         // }}
@@ -57,14 +57,14 @@ export default function Home() {
   }
 `}</style>
         <Navb />
-        {/* <CanvasScene /> */}
+        <CanvasScene />
         <HeroSection />
-        {/* <CanvasScene /> */}
+        <CanvasScene />
         <ThreeCard />
-        {/* <CanvasScene /> */}
+        <CanvasScene />
     
       </main>
-      <main className="">
+      <main className="gradient-animation">
       <style jsx>{`
   .gradient-animation {
     animation: gradientChange 2s infinite;
@@ -82,16 +82,17 @@ export default function Home() {
     }
   }
 `}</style>
-      {/* <CanvasScene /> */}
+      <CanvasScene />
       <Youtube />
-      {/* <CanvasScene /> */}
+      <CanvasScene />
       <Distribution />
-      {/* <CanvasScene /> */}
+      <CanvasScene />
         <Chart />
-        {/* <CanvasScene /> */}
+        <CanvasScene />
         <Members />
-        {/* <CanvasScene /> */}
+        <CanvasScene />
         <Partners />
+        <CanvasScene />
         
       </main>
       <main

@@ -51,46 +51,46 @@ const AdminProfile = () => {
        <div className="flex rounded-2xl">
        <div className="flex gap-2 mt-4 flex-wrap">
 
-<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1]">
+<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1] dark:bg-[#24303F]">
   <div className="card-body items-center text-center">
   <BiSolidDollarCircle className="h-[55px] w-[55px] text-yellow-500"/>
-  <h1 className="card-title text-[#23354F] text-3xl font-bold">239</h1>
+  <h1 className="card-title text-[#23354F] text-3xl font-bold dark:text-gray-100">239</h1>
     <div className="card-actions justify-end">
-    <h2 className="card-title text-[#23354F]">Tokens</h2>
+    <h2 className="card-title text-[#23354F] dark:text-gray-100">Tokens</h2>
     </div>
   </div>
 </div>
 
-<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1]">
+<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1] dark:bg-[#24303F]">
   <div className="card-body items-center text-center">
   <GiWallet className="h-[55px] w-[55px] text-slate-500"/>
-  <h1 className="card-title text-[#23354F] text-3xl font-bold">146</h1>
+  <h1 className="card-title text-[#23354F] text-3xl font-bold dark:text-gray-100">146</h1>
     <div className="card-actions justify-end">
-    <h2 className="card-title text-[#23354F]">Wallet</h2>
+    <h2 className="card-title text-[#23354F] dark:text-gray-100">Wallet</h2>
     </div>
   </div>
 </div>
 
-<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1]">
+<div className="card text-neutral-content w-60 ml-4 h-50 bg-[#D2D8E1] dark:bg-[#24303F]">
   <div className="card-body items-center text-center">
   <HiUsers className="h-[55px] w-[55px] text-slate-500"/>
-  <h1 className="card-title text-[#23354F] text-3xl font-bold">146</h1>
+  <h1 className="card-title text-[#23354F] text-3xl font-bold dark:text-gray-100">146</h1>
     <div className="card-actions justify-end">
-    <h2 className="card-title text-[#23354F]">Followers</h2>
+    <h2 className="card-title text-[#23354F] dark:text-gray-100">Followers</h2>
     </div>
   </div>
 </div>
 
 
-<div className="overflow-x-auto mt-4 w-[800px] bg-[#D2D8E1] text-[#23354F] rounded-lg">
+<div className="overflow-x-auto mt-4 w-[800px] bg-[#D2D8E1] text-[#23354F] dark:bg-[#24303F] dark:text-gray-100 rounded-lg">
   <table className="table">
     <thead>
       <tr>
         <th>
         </th>
-        <th className="text-black-2">Name</th>
-        <th className="text-black">Job</th>
-        <th className="text-black">Favorite Color</th>
+        <th className="text-black-2 dark:text-gray-400">Name</th>
+        <th className="text-black dark:text-gray-400">Job</th>
+        <th className="text-black dark:text-gray-400">Favorite Color</th>
         <th> <button className="btn btn-neutral btn-sm">Select All</button></th>
       </tr>
     </thead>
@@ -98,7 +98,7 @@ const AdminProfile = () => {
       <tr>
         <th>
           <label>
-            <input type="checkbox" className="checkbox" />
+            <input type="checkbox" className="checkbox border dark:border-white" />
           </label>
         </th>
         <td>
@@ -129,7 +129,7 @@ const AdminProfile = () => {
       <tr>
         <th>
           <label>
-            <input type="checkbox" className="checkbox" />
+            <input type="checkbox" className="checkbox dark:border-white" />
           </label>
         </th>
         <td>
@@ -160,7 +160,7 @@ const AdminProfile = () => {
       <tr>
         <th>
           <label>
-            <input type="checkbox" className="checkbox" />
+            <input type="checkbox" className="checkbox dark:border-white" />
           </label>
         </th>
         <td>
@@ -191,7 +191,7 @@ const AdminProfile = () => {
       <tr>
         <th>
           <label>
-            <input type="checkbox" className="checkbox" />
+            <input type="checkbox" className="checkbox dark:border-white" />
           </label>
         </th>
         <td>
@@ -225,7 +225,7 @@ const AdminProfile = () => {
 
         </div>
 
-        <div className="ml-2 mt-6 bg-[#D2D8E1] bg-cover bg-center rounded-lg">
+        <div className="ml-2 mt-6 bg-[#D2D8E1] dark:bg-[#24303F] bg-cover bg-center rounded-lg">
         <div className="card  text-neutral-content w-96 h-160">
       <div className="avatar pl-32 pt-6">
         <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
@@ -269,9 +269,9 @@ const AdminProfile = () => {
             </>
           ) : (
             <>
-              <h1 className="card-title text-[#23354F]">{userDetails.name}</h1>
-              <h2 className="card-title text-[#23354F]">{userDetails.email}</h2><br />
-              <h2 className="card-title text-[#23354F]">{userDetails.role}</h2><br />
+              <h1 className="card-title text-[#23354F] dark:text-gray-100">{userDetails.name}</h1>
+              <h2 className="card-title text-[#23354F] dark:text-gray-100">{userDetails.email}</h2><br />
+              <h2 className="card-title text-[#23354F] dark:text-gray-100">{userDetails.role}</h2><br />
               <button
                 onClick={() => setIsEditing(true)}
                 className="btn btn-neutral"
@@ -286,13 +286,13 @@ const AdminProfile = () => {
         <div className="card text-neutral-content w-96">
   <div className="card-body items-center text-center">
     <div className="card-actions justify-end gap-8">
-      <IoIosMail className="h-[30px] w-[30px] text-[#333A48]" />
-      <hr className="w-[1px] h-[30px] bg-[#333A48] mx-2" />
-      <RiBriefcase4Fill className="h-[30px] w-[30px] text-[#333A48]" />
-      <hr className="w-[1px] h-[30px] bg-[#333A48] mx-2 " />
-      <HiUsers className="h-[30px] w-[30px] text-[#333A48]" />
+      <IoIosMail className="h-[30px] w-[30px] text-[#333A48] dark:text-gray-100" />
+      <hr className="w-[1px] h-[30px] bg-[#333A48] mx-2 dark:text-gray-100" />
+      <RiBriefcase4Fill className="h-[30px] w-[30px] text-[#333A48] dark:text-gray-100" />
+      <hr className="w-[1px] h-[30px] bg-[#333A48] mx-2 dark:text-gray-100" />
+      <HiUsers className="h-[30px] w-[30px] text-[#333A48] dark:text-gray-100" />
     </div>
-   <div className="flex gap-19 text-[#242C36]">
+   <div className="flex gap-19 text-[#242C36] dark:text-gray-100">
        <h1>1086</h1>
        <h1>1582</h1>
        <h1>6341</h1>
@@ -315,8 +315,8 @@ const AdminProfile = () => {
 
        </div>
 
-       <div className="bg-[#D2D8E1] rounded-lg shadow text-gray-800 p-10 mt-8">
-            <h3 className="text-xl font-semibold text-gray-800">
+       <div className="bg-[#D2D8E1] dark:bg-[#24303F] rounded-lg shadow text-gray-800 p-10 mt-8">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
               Recent Activities
             </h3>
             <ul className="mt-4 space-y-2">
@@ -324,19 +324,19 @@ const AdminProfile = () => {
                 <span className="bg-green-100 text-green-500 p-2 rounded-full">
                   ✔
                 </span>
-                <p>Updated profile information</p>
+                <p className="dark:text-gray-100">Updated profile information</p>
               </li>
               <li className="flex items-center space-x-4">
                 <span className="bg-yellow-100 text-yellow-500 p-2 rounded-full">
                   ✏
                 </span>
-                <p>Changed password</p>
+                <p className="dark:text-gray-100">Changed password</p>
               </li>
               <li className="flex items-center space-x-4">
                 <span className="bg-red-100 text-red-500 p-2 rounded-full">
                   ❌
                 </span>
-                <p>Deleted a user</p>
+                <p className="dark:text-gray-100">Deleted a user</p>
               </li>
             </ul>
           </div>

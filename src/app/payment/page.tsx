@@ -196,7 +196,7 @@ useEffect(() => {
         {/* Profile Section */}
         <div className="gap-6">
           <div className="font-sans p-6">
-            <div className="mb-8 flex items-center gap-6 rounded-xl border border-[#374151] bg-[#D2D8E1] p-4">
+            <div className="mb-8 flex items-center gap-6 rounded-xl border-2 border-gray-600 bg-[#D2D8E1] dark:bg-[#24303F] p-4">
               <div className="h-24 w-24">
                 <img
                   src="/user-02.png"
@@ -205,11 +205,11 @@ useEffect(() => {
                 />
               </div>
               <div className="space-y-2">
-                <p>
-                  <span className="font-bold text-black">Name:</span> Alice
+                <p className="font-bold text-black dark:text-white">
+                  <span className="text-lg font-semibold dark:text-gray-400">Name:</span> Alice
                 </p>
-                <p>
-                  <span className="font-bold text-black">Wallet Address:</span>{" "}
+                <p className="font-bold text-black dark:text-white">
+                  <span className="text-lg font-semibold dark:text-gray-400">Wallet Address:</span>{" "}
                   0x1234...abcd
                 </p>
               </div>
@@ -245,7 +245,7 @@ useEffect(() => {
             ].map((stock, index) => (
               <div
                 key={index}
-                className="w-54 rounded-xl border-2 border-gray-600 bg-[#D2D8E1] p-4 text-center shadow-lg transition-all duration-300 ease-in-out"
+                className="w-54 rounded-xl border-2 border-gray-600 bg-[#D2D8E1] dark:bg-[#24303F] p-4 text-center shadow-lg transition-all duration-300 ease-in-out"
               >
                 <div className="mx-auto mb-4 h-24 w-24">
                   <img
@@ -254,7 +254,7 @@ useEffect(() => {
                     className="h-full w-full rounded-full object-cover"
                   />
                 </div>
-                <div className="text-xl font-medium text-[#374151]">
+                <div className="text-xl font-medium text-[#374151] dark:text-white">
                   {stock.name}
                 </div>
                 <div className="mt-2 text-lg font-semibold text-gray-400">
@@ -267,7 +267,7 @@ useEffect(() => {
 
         {/* Token Selection Section */}
         <div className="mb-8">
-          <h1 className="mb-4 text-center text-2xl font-semibold">
+          <h1 className="mb-4 text-center text-2xl font-semibold text-gray-500 ">
             Selection of Token
           </h1>
           <div className="flex flex-wrap justify-center gap-20">
@@ -291,8 +291,8 @@ useEffect(() => {
               <div
                 key={index}
                 onClick={() => handleTokenSelection(token.name)}
-                className={`w-40 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-2 text-center shadow-md ${
-                  selectedToken === token.name ? "bg-slate-100" : "bg-[#D2D8E1]"
+                className={`w-40 cursor-pointer rounded-xl border border-[#374151]  hover:shadow-xl p-2 text-center shadow-md ${
+                  selectedToken === token.name ? "bg-gray-400 dark:text-gray-600" : "hover:bg-slate-100 dark:hover:bg-gray-300 bg-[#D2D8E1] dark:bg-[#24303F]"
                 }`}
               >
                 <div className="mx-auto mb-4 h-16 w-16">
@@ -302,10 +302,10 @@ useEffect(() => {
                     className="h-full w-full  rounded-full object-cover"
                   />
                 </div>
-                <div className="text-lg font-semibold text-black">
+                <div className="text-lg font-semibold text-gray-600">
                   {token.price}
                 </div>
-                <div className="text-base font-medium text-gray-600">
+                <div className="text-base font-bold text-gray-600 ">
                   {token.name}
                 </div>
                 {selectedToken === token.name && (
@@ -321,16 +321,16 @@ useEffect(() => {
         {/* Payment System Section */}
         {selectedToken && (
           <div className="mt-12 flex flex-col items-center">
-            <h1 className="mb-6 text-2xl font-semibold">Payment System</h1>
+            <h1 className="mb-6 text-2xl font-semibold text-gray-600">Payment System</h1>
             <div className="mb-8 mt-2 flex gap-12">
   {/* Card Payment Option */}
   <div
     onClick={() => handleCardSelection("Card Payment")}
-    className={`flex-2 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-6 text-center shadow-sm ${
-      selectedPayment === "Card Payment" ? "bg-slate-100" : "bg-[#D2D8E1]"
+    className={`flex-2 cursor-pointer rounded-xl border dark:bg-[#24303F] border-[#374151] hover:bg-slate-100  hover:shadow-xl p-6 text-center shadow-sm ${
+      selectedPayment === "Card Payment" ? "bg-gray-400 dark:hover:bg-gray-400" : "bg-[#D2D8E1] dark:hover:bg-gray-300"
     }`}
   >
-    <h2 className="text-lg font-bold text-gray-800">Card Payment</h2>
+    <h2 className="text-lg font-bold text-gray-600">Card Payment</h2>
     <p className="mt-2 text-sm text-gray-600">Use your credit or debit card</p>
   </div>
 
@@ -338,10 +338,10 @@ useEffect(() => {
   <div
     onClick={() => handleCardSelection("Crypto")}
     className={`flex-2 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-6 text-center shadow-sm ${
-      selectedPayment === "Crypto" ? "bg-slate-100" : "bg-[#D2D8E1]"
+      selectedPayment === "Crypto" ? "bg-gray-400 dark:hover:bg-gray-400" : "bg-[#D2D8E1] dark:hover:bg-gray-300"
     }`}
   >
-    <h2 className="text-lg font-bold text-gray-800">Crypto</h2>
+    <h2 className="text-lg font-bold text-gray-600">Crypto</h2>
     <p className="mt-2 text-sm text-gray-600">Pay using cryptocurrency</p>
   </div>
 </div>
@@ -358,7 +358,7 @@ useEffect(() => {
         key={index}
         onClick={() => handleCryptoSelection(crypto.name)}
         className={`mt-10 w-40 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-6 text-center shadow-md ${
-          selectedCrypto === crypto.name ? "bg-slate-100" : "bg-[#D2D8E1]"
+          selectedCrypto === crypto.name ? "bg-gray-400 dark:hover:bg-gray-400" : "bg-[#D2D8E1] dark:bg-[#24303F] hover:dark:bg-gray-300 text-gray-600"
         }`}
       >
         <div className="mx-auto mb-4 h-16 w-16">
@@ -368,7 +368,7 @@ useEffect(() => {
             className="h-full w-full rounded-full object-cover"
           />
         </div>
-        <div className="text-lg font-semibold text-black">{crypto.name}</div>
+        <div className="text-lg font-semibold">{crypto.name}</div>
       </div>
     ))}
   </div>
@@ -380,7 +380,7 @@ useEffect(() => {
                 <div
                   onClick={() => handleCardClick("Ethereum")}
                   className={`mt-10 w-40 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-6 text-center shadow-md ${
-                    selectedCard === "Ethereum" ? "bg-slate-100" : "bg-[#D2D8E1]"
+                    selectedCard === "Ethereum" ? "bg-gray-400 dark:hover:bg-gray-400" : "bg-[#D2D8E1] dark:bg-[#24303F] hover:dark:bg-gray-300"
                   }`}
                 >
                   <div className="mx-auto mb-4 h-16 w-16">
@@ -390,13 +390,13 @@ useEffect(() => {
                       className="h-full w-full rounded-full object-cover"
                     />
                   </div>
-                  <div className="text-lg font-semibold text-black">Ethers</div>
+                  <div className="text-lg font-semibold text-gray-600">Ethers</div>
                 </div>
 
                 <div
                   onClick={() => handleCardClick("USDT")}
                   className={`mt-10 w-40 cursor-pointer rounded-xl border border-[#374151] hover:bg-slate-100 hover:shadow-xl p-6 text-center shadow-md ${
-                    selectedCard === "USDT" ? "bg-slate-100" : "bg-[#D2D8E1]"
+                    selectedCard === "USDT" ? "bg-gray-400 dark:hover:bg-gray-400" : "bg-[#D2D8E1] dark:bg-[#24303F] hover:dark:bg-gray-300"
                   }`}
                 >
                   <div className="mx-auto mb-4 h-16 w-16">
@@ -406,7 +406,7 @@ useEffect(() => {
                       className="h-full w-full rounded-full object-cover"
                     />
                   </div>
-                  <div className="text-lg font-semibold text-black">USDT</div>
+                  <div className="text-lg font-semibold text-gray-600">USDT</div>
                 </div>
               </div>
             )}
