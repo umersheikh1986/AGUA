@@ -3,12 +3,12 @@ import React from 'react';
 import './style.css';
 import '../../styles/globals.css';
 import Footer from "../../components/Footer/Footer" ;
-import Navbar from "../../components/Navbar";
+import Navb from "../../components/Navb";
 
 function page() {
   return (
     <>
-    <Navbar />
+    <Navb />
     <div class="download-section">
   <h1 class="card-heading mt-35">Audit Report</h1>
   <div class="download-content">

@@ -5,19 +5,19 @@ import CanvasScene from "../Animate";
   return (
     <div className="w-full overflow-x-hidden pt-10 font-times">
       {/* <CanvasScene /> */}
-      <footer className=" w-full text-white bg-gray-900">
+      <footer className=" w-full text-white bg-gold-silver">
         {/* <hr className="" /> */}
         <div className="  max-w-full  p-12    bg-white bg-opacity-10 backdrop-blur-sm overflow-x-hidden  py-6 lg:py-16">
           <div className="md:flex md:justify-between">
             <div className="mb-6 gap-6 md:mb-0">
               <a href="/" className=" ">
                 <img
-                  src="/agua-logo.png"
+                  src="/Agua-new-logo.png"
                   className="h-24 w-24"
                   alt="FlowBite Logo"
                 />
               </a>
-              <p className=" px-2 text-3xl font-semibold ">Agua</p>
+              {/* <p className=" px-2 text-3xl font-semibold ">Agua</p> */}
               <p className="mt-2 px-2">
                 {" "}
                 Discover the power of our secure and <br />

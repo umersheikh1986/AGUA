@@ -84,6 +84,7 @@ module.exports = {
   theme: {
     fontFamily: {
       satoshi: ["Satoshi", "sans-serif"],
+      orbitron: ['Orbitron'],
     },
     screens: {
       "2xsm": "375px",
@@ -134,11 +135,15 @@ module.exports = {
                                  lightgold: '#D2BA57'
                                },
                                fontFamily: {
-                                times: ['"Times New Roman"', 'serif'],
+                                times: ['"Orbitron"', 'serif'],
+                                san: "Orbitron, sans-serif",
                                },
                                backgroundImage: {
                                  spark: "url('/bgs.png')",
                                },
+                               backgroundImage: {
+                                'gold-silver': 'linear-gradient(135deg, #d4af37, #c0c0c0)',
+                              },
                                keyframes: {
                                          spark: {
                                            "0%, 100%": { opacity: "0", transform: "scale(1)" },

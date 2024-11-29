@@ -16,74 +16,45 @@ const loadAmCharts = async () => {
 };
 
 function Chart() {
+  const chartData = [
+    { country: "Private sale", litres: 43.35, color: "#edb318" },
+    { country: "Pancake Swap", litres: 52.02, color: "#cf9b10" },
+    { country: "Future Development And Marketing", litres: 52.02, color: "#9e760b" },
+    { country: "Team Allocation", litres: 60.69, color: "#664c07" },
+    { country: "Pre-sale", litres: 86.7, color: "#473504" },
+    { country: "Burning", litres: 138.72, color: "#BEBEBE" },
+    { country: "Reward For Ecosystem", litres: 433.5, color: "#717171" },
+  ];
+  
   useEffect(() => {
     let chart;
-
+  
     loadAmCharts().then(({ am4core, am4charts, am4themes_animated }) => {
       am4core.useTheme(am4themes_animated);
-
+  
       chart = am4core.create("chartdiv", am4charts.PieChart3D);
-      chart.hiddenState.properties.opacity = 0; // Initial fade-in effect
-
-      // Disable legend
+      chart.hiddenState.properties.opacity = 0;
+  
       chart.legend = null;
-
-      // Disable amCharts branding
       chart.logo.disabled = true;
-
-      // Set data
-      chart.data = [
-        { country: "Private sale", litres: 43.35,  color: am4core.color("#edb318")  },
-        { country: "PANCAKE SWAP", litres: 52.02,  color: am4core.color("#cf9b10")  },
-        { country: "FUTURE DEVELOPMENT AND MARKETING", litres: 52.02,  color: am4core.color("#9e760b")  },
-        { country: "TEAM ALLOCATION ", litres: 60.69,  color: am4core.color("#664c07")  },
-        { country: "Pre-sale", litres: 86.7,  color: am4core.color("#473504") },
-        { country: "BURNING", litres: 138.72,  color: am4core.color("#717171")  },
-        { country: "REWARD FOR ECOSYSTEM ", litres: 433.5,  color: am4core.color("#BEBEBE")  },
-      ];
-
-      chart
-
-      // Create series
+  
+      chart.data = chartData;
+  
       const series = chart.series.push(new am4charts.PieSeries3D());
       series.dataFields.value = "litres";
       series.dataFields.category = "country";
       series.slices.template.propertyFields.fill = "color";
-
-      // Function to toggle chart settings based on screen size
-function applyChartSettings(series) {
-  if (window.innerWidth <= 768) {
-    // For mobile screens (768px and below)
-    series.labels.template.disabled = true;
-    series.slices.template.tooltipText = "{category}: {value.percent.formatNumber('#.0')}%";
-  } else {
-    // For larger screens
-    series.labels.template.disabled = false;
-    series.slices.template.tooltipText = "{category}: {value.percent.formatNumber('#.0')}% \n Value: {value}";
-  }
-}
-
-// Initial application of settings
-applyChartSettings(series);
-
-// Update settings on window resize
-window.addEventListener("resize", () => applyChartSettings(series));
-
-      // Set text color to white for labels and ticks
-      series.labels.template.fill = am4core.color("#ffffff");
-      series.ticks.template.stroke = am4core.color("#ffffff");
-
-      series.labels.template.text = "{category}: {value.percent.formatNumber('#.0')}%";
-      series.slices.template.tooltipText = "{category}: {value.percent.formatNumber('#.0')}%";
+  
+      // Disable labels and ticks
+      series.labels.template.disabled = true;
+      series.ticks.template.disabled = true;
     });
-
-    // Cleanup on unmount
+  
     return () => {
-      if (chart) {
-        chart.dispose();
-      }
+      if (chart) chart.dispose();
     };
   }, []);
+  
 //  useEffect(() => {
   //   // Themes begin
   //   am4core.useTheme(am4themes_animated);
@@ -193,39 +164,86 @@ const divright = useRef(null);
 
 
 
-
-<div className="flex flex-col lg:flex-row mt-20 w-full h-auto space-y-10 lg:space-y-0 lg:space-x-20 justify-center items-center">
+<h1 className='font-times font-extrabold text-5xl md:text-6xl text-white text-center mt-6'>Tokenomics</h1>
+<div className="flex flex-col lg:flex-row w-full h-auto space-y-10 lg:space-y-0 lg:space-x-20 justify-center items-center">
   {/* <CanvasScene /> */}
 
-
-
-  <div 
-  id="chartdiv" 
-  className="w-full sm:w-5/6 lg:w-2/3 h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden" 
-  style={{ minHeight: "250px" }}>
-</div>
-
-
-  {/* Text Section */}
-  <div className="w-full lg:w-1/3 p-6 lg:p-12 font-times h-full">
+  <div className="w-full lg:w-3/6 p-6 lg:p-12 font-times h-full">
     <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white text-center lg:text-left mb-6 break-words">
       Token Distribution
     </h1>
     <div className="space-y-6">
+    {/* Token Items */}
+    {[
+      { title: "Private Sale", percentage: "5%", description: "50,000 tokens are allocated for early investors, providing initial liquidity to kickstart the project.", width: "5%" },
+      { title: "Pre-Sale", percentage: "10%", description: "100,000 tokens are allocated for the pre-sale, aimed at attracting early adopters and supporters.", width: "10%" },
+      { title: "Reward for Ecosystem", percentage: "50%", description: "500,000 tokens dedicated to rewarding the ecosystem, incentivizing staking and governance participation.", width: "50%" },
+      { title: "Pancake Swap", percentage: "6%", description: "60,000 tokens will be listed on PancakeSwap to provide liquidity for users.", width: "6%" },
+    ].map((item, index) => (
+      <div key={index}>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            {/* Bullet Point */}
+            <span className="w-2.5 h-2.5 bg-white rounded-full"></span>
+            <p className="text-sm sm:text-base lg:text-xl font-extrabold text-white underline">
+              {item.title}
+            </p>
+          </div>
+          <p className="text-sm sm:text-base lg:text-lg text-white">{item.percentage}</p>
+        </div>
+        <p className="text-sm sm:text-base lg:text-lg text-white mt-2 break-words">{item.description}</p>
+        <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
+          <div
+            className="bg-[#4C443F] h-1 rounded-full"
+            style={{ width: item.width }}
+          ></div>
+        </div>
+      </div>
+    ))}
+  </div>
+  </div>
+
+<div>
+  <div
+      id="chartdiv"
+      className="w-full sm:w-4/6 lg:w-2/3 h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden sm:ml-20 font-times"
+      style={{ minHeight: "250px" }}
+    ></div>
+
+    <div className="mt-4 flex flex-wrap justify-center items-start gap-4 text-center">
+      {chartData.map((item, index) => (
+        <div key={index} className="flex items-center gap-2 text-sm lg:text-base">
+          <span
+            className="w-4 h-4 inline-block rounded-full"
+            style={{ backgroundColor: item.color }}
+          ></span>
+          <span className="text-white">{item.country}: {item.litres}</span>
+        </div>
+      ))}
+    </div>
+    </div>
+
+
+  {/* Text Section */}
+  <div className="w-full lg:w-3/6 p-6 lg:p-12 font-times h-full">
+    {/* <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white text-center lg:text-left mb-6 break-words">
+      Token Distribution
+    </h1> */}
+    <div className="space-y-6">
       {/* Token Items */}
       {[
-        { title: "Private Sale", percentage: "5%", description: "50,000 tokens are allocated for early investors, providing initial liquidity to kickstart the project.", width: "5%" },
-        { title: "Pre-Sale", percentage: "10%", description: "100,000 tokens are allocated for the pre-sale, aimed at attracting early adopters and supporters.", width: "10%" },
-        { title: "Reward for Ecosystem", percentage: "50%", description: "500,000 tokens dedicated to rewarding the ecosystem, incentivizing staking and governance participation.", width: "50%" },
-        { title: "Pancake Swap", percentage: "6%", description: "60,000 tokens will be listed on PancakeSwap to provide liquidity for users.", width: "6%" },
         { title: "Team Allocation", percentage: "7%", description: "70,000 tokens are allocated to the team with vesting schedules aligned with long-term success.", width: "7%" },
         { title: "Burning", percentage: "16%", description: "160,000 tokens will be burned periodically to enhance the token’s scarcity and value.", width: "16%" },
         { title: "Future Development & Marketing", percentage: "6%", description: "60,000 tokens reserved for development and marketing initiatives.", width: "6%" },
       ].map((item, index) => (
         <div key={index}>
           <div className="flex justify-between items-center">
-            <p className="text-sm sm:text-base lg:text-xl font-extrabold text-white underline">{item.title}</p>
-            <p className="text-sm sm:text-base lg:text-lg text-white">{item.percentage}</p>
+          <div className="flex items-center gap-2">
+            <span className="w-2.5 h-2.5 bg-white rounded-full"></span>
+            <p className="text-sm sm:text-base lg:text-xl font-extrabold text-white underline">
+              {item.title}
+            </p>
+          </div>
           </div>
           <p className="text-sm sm:text-base lg:text-lg text-white mt-2 break-words">{item.description}</p>
           <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
