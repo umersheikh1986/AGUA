@@ -367,7 +367,7 @@ export default function Distribution() {
     //   </div>
     // </div>
     <>
-    <div className="">
+    <div className="font-san">
     
 
 

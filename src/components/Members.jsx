@@ -113,12 +113,12 @@ const divrig = useRef(null);
 
   return (
     <>
-    <div>
+    <div className='font-san'>
       {/* <CanvasScene /> */}
         <p className='text-center text-gray-300 font-bold mt-10 font-times '>OUR AMAZING</p>
         <p className='text-center text-white text-4xl font-times font-extrabold'>Team Of Experts</p>
     </div>
-    <div className='flex flex-wrap justify-center gap-6 md:gap-20 mt-8 '>
+    <div className='flex flex-wrap font-san justify-center gap-6 md:gap-20 mt-8 '>
             {/* <div ref={divleft} className="bg-[#493E1D] card w-64 h-80 md:h-[420px] md:w-80 shadow-xl ">
            <figure className="px-10 pt-10">
     <img

@@ -82,10 +82,10 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    fontFamily: {
-      satoshi: ["Satoshi", "sans-serif"],
-      orbitron: ['Orbitron'],
-    },
+    // fontFamily: {
+    //   satoshi: ["Satoshi", "sans-serif"],
+    //   orbitron: ['Orbitron'],
+    // },
     screens: {
       "2xsm": "375px",
       xsm: "425px",
@@ -135,14 +135,14 @@ module.exports = {
                                  lightgold: '#D2BA57'
                                },
                                fontFamily: {
-                                times: ['"Orbitron"', 'serif'],
-                                san: "Orbitron, sans-serif",
+                                // times: ['"Orbitron"', 'serif'],
+                                san: "Orbitron, sans-serif"
                                },
                                backgroundImage: {
                                  spark: "url('/bgs.png')",
                                },
                                backgroundImage: {
-                                'gold-silver': 'linear-gradient(135deg, #d4af37, #c0c0c0)',
+                                'gold-silver': 'linear-gradient(135deg, #000000, #493E1D)',
                               },
                                keyframes: {
                                          spark: {

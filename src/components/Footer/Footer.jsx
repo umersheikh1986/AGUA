@@ -3,7 +3,7 @@ import CanvasScene from "../Animate";
 
  export default function Footer  () {
   return (
-    <div className="w-full overflow-x-hidden pt-10 font-times">
+    <div className="w-full overflow-x-hidden pt-10 font-san">
       {/* <CanvasScene /> */}
       <footer className=" w-full text-white bg-gold-silver">
         {/* <hr className="" /> */}
@@ -13,15 +13,15 @@ import CanvasScene from "../Animate";
               <a href="/" className=" ">
                 <img
                   src="/Agua-new-logo.png"
-                  className="h-24 w-24"
+                  className="h-24 w-24 lg:ml-10"
                   alt="FlowBite Logo"
                 />
               </a>
               {/* <p className=" px-2 text-3xl font-semibold ">Agua</p> */}
-              <p className="mt-2 px-2">
+              <p className="mt-2">
                 {" "}
-                Discover the power of our secure and <br />
-                rewarding Credit Cards
+                Discover the power of our<br /> secure and
+                rewarding<br /> Credit Cards
               </p>
             </div>
             <div className="grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-6 ">

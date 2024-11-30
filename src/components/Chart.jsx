@@ -164,8 +164,8 @@ const divright = useRef(null);
 
 
 
-<h1 className='font-times font-extrabold text-5xl md:text-6xl text-white text-center mt-6'>Tokenomics</h1>
-<div className="flex flex-col lg:flex-row w-full h-auto space-y-10 lg:space-y-0 lg:space-x-20 justify-center items-center">
+<h1 className='font-san font-extrabold text-5xl md:text-6xl text-[#9ACD32] text-center mt-6'>Tokenomics</h1>
+<div className="flex flex-col lg:flex-row w-full h-auto space-y-10 lg:space-y-0 font-san lg:space-x-20 justify-center items-center">
   {/* <CanvasScene /> */}
 
   <div className="w-full lg:w-3/6 p-6 lg:p-12 font-times h-full">
