@@ -54,8 +54,8 @@ const chatData = [
 
 const ChatCard = () => {
   return (
-    <div className="col-span-12 rounded-xl border border-stroke bg-[#D2D8E1] py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-      <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
+    <div className="col-span-12 rounded-xl border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
+      <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-[#F1BE11]">
         Chats
       </h4>
 
@@ -78,7 +78,7 @@ const ChatCard = () => {
                 }}
               />
               <span
-                className={`absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white ${
+                className={`absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-[#F1BE11] ${
                   chat.dot === 6 ? "bg-meta-6" : `bg-meta-${chat.dot}`
                 } `}
               ></span>
@@ -86,19 +86,19 @@ const ChatCard = () => {
 
             <div className="flex flex-1 items-center justify-between">
               <div>
-                <h5 className="font-medium text-black dark:text-white">
+                <h5 className="font-medium text-black dark:text-[#F1BE11]">
                   {chat.name}
                 </h5>
                 <p>
-                  <span className="text-sm text-black dark:text-white">
+                  <span className="text-sm text-black dark:text-[#F1BE11]">
                     {chat.text}
                   </span>
-                  <span className="text-xs dark:text-white"> . {chat.time} min</span>
+                  <span className="text-xs dark:text-[#F1BE11]"> . {chat.time} min</span>
                 </p>
               </div>
               {chat.textCount !== 0 && (
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary">
-                  <span className="text-sm font-medium text-white">
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F1BE11]">
+                  <span className="text-sm font-medium dark:text-black">
                     {chat.textCount}
                   </span>
                 </div>

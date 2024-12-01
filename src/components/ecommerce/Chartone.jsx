@@ -13,7 +13,7 @@ const options = {
     position: "top",
     horizontalAlign: "left",
   },
-  colors: ["#3C50E0", "#80CAEE"],
+  colors: ["#828185", "#F1BE11"],
   chart: {
     fontFamily: "Satoshi, sans-serif",
     height: 335,
@@ -70,7 +70,7 @@ const options = {
   markers: {
     size: 4,
     colors: "#fff",
-    strokeColors: ["#3056D3", "#80CAEE"],
+    strokeColors: ["#E22D2C", "#80CAEE"],
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -140,37 +140,37 @@ const ChartOne = () => {
   ];
 
   return (
-    <div className="col-span-12 rounded-xl border border-stroke bg-[#D2D8E1] px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
+    <div className="col-span-12 rounded-xl border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">
           <div className="flex min-w-47.5">
-            <span className="mr-2 mt-1 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-primary">
-              <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-primary"></span>
+            <span className="mr-2 mt-1 flex h-4 w-full max-w-4 items-center justify-center rounded-full border dark:border-[#F1BE11]">
+              <span className="block h-2.5 w-full max-w-2.5 rounded-full dark:bg-[#F1BE11]"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-primary">Total Revenue</p>
-              <p className="text-sm font-medium dark:text-white">12.04.2022 - 12.05.2022</p>
+              <p className="font-semibold dark:text-white">Total Revenue</p>
+              <p className="text-sm font-medium dark:text-[#F1BE11]">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
           <div className="flex min-w-47.5">
-            <span className="mr-2 mt-1 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-secondary">
-              <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"></span>
+            <span className="mr-2 mt-1 flex h-4 w-full max-w-4 items-center justify-center rounded-full border dark:border-[#F1BE11]">
+              <span className="block h-2.5 w-full max-w-2.5 rounded-full dark:bg-[#F1BE11]"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-secondary">Total Sales</p>
-              <p className="text-sm font-medium dark:text-white">12.04.2022 - 12.05.2022</p>
+              <p className="font-semibold dark:text-white">Total Sales</p>
+              <p className="text-sm font-medium dark:text-[#F1BE11]">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
         </div>
         <div className="flex w-full max-w-45 justify-end">
           <div className="inline-flex items-center rounded-md bg-whiter p-1.5 dark:bg-meta-4">
-            <button className="rounded bg-white px-3 py-1 text-xs font-medium text-black shadow-card hover:bg-white hover:shadow-card dark:bg-boxdark dark:text-white dark:hover:bg-boxdark">
+            <button className="rounded bg-white px-3 py-1 text-xs font-medium text-black shadow-card hover:bg-white hover:shadow-card dark:bg-boxdark dark:text-[#F1BE11] dark:hover:bg-boxdark">
               Day
             </button>
-            <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-white dark:hover:bg-boxdark">
+            <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-[#F1BE11] dark:hover:bg-boxdark">
               Week
             </button>
-            <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-white dark:hover:bg-boxdark">
+            <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-[#F1BE11] dark:hover:bg-boxdark">
               Month
             </button>
           </div>

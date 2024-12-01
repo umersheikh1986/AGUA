@@ -2,6 +2,7 @@
 import React from 'react'
 import CanvasScene from './Animate'
 import { useEffect,useRef } from 'react';
+import PieChart from './newchart';
 // import * as am4core from "@amcharts/amcharts4/core";
 // import * as am4charts from "@amcharts/amcharts4/charts";
 // import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -17,13 +18,13 @@ const loadAmCharts = async () => {
 
 function Chart() {
   const chartData = [
-    { country: "Private sale", litres: 43.35, color: "#edb318" },
-    { country: "Pancake Swap", litres: 52.02, color: "#cf9b10" },
-    { country: "Future Development And Marketing", litres: 52.02, color: "#9e760b" },
-    { country: "Team Allocation", litres: 60.69, color: "#664c07" },
-    { country: "Pre-sale", litres: 86.7, color: "#473504" },
-    { country: "Burning", litres: 138.72, color: "#BEBEBE" },
-    { country: "Reward For Ecosystem", litres: 433.5, color: "#717171" },
+    { country: "Private sale", percentage: "5%", color: "#edb318" },
+    { country: "Pancake Swap", percentage: "6%", color: "#cf9b10" },
+    { country: "Future Development And Marketing", percentage: "6%", color: "#9e760b" },
+    { country: "Team Allocation", percentage: "7%", color: "#664c07" },
+    { country: "Pre-sale", percentage: "10%", color: "#473504" },
+    { country: "Burning", percentage: "16%", color: "#BEBEBE" },
+    { country: "Reward For Ecosystem", percentage: "50%", color: "#717171" },
   ];
   
   useEffect(() => {
@@ -41,19 +42,33 @@ function Chart() {
       chart.data = chartData;
   
       const series = chart.series.push(new am4charts.PieSeries3D());
-      series.dataFields.value = "litres";
+      series.dataFields.value = "percentage";  // Use percentage
       series.dataFields.category = "country";
       series.slices.template.propertyFields.fill = "color";
   
-      // Disable labels and ticks
-      series.labels.template.disabled = true;
+      // Display percentage in tooltip
+      series.slices.template.tooltipText = "{category}: {value}%";
+  
+      // Disable ticks
       series.ticks.template.disabled = true;
+  
+      // Enable label template for percentage display
+      series.labels.template.text = "{percentages}";  // Show percentage on slices
+      series.labels.template.disabled = false;  // Ensure labels are visible
+  
+      // Adjust label positioning to prevent overflow outside the chart
+      series.labels.template.radius = am4core.percent(10);  // Set the radius of labels within the slice
+      series.labels.template.relativeRotation = 90;  // Adjust text rotation for better positioning
+
+      // Optional: Adjust label size based on slice size to avoid overlap
+      series.labels.template.fontSize = 12;  // Font size adjustment
     });
   
     return () => {
       if (chart) chart.dispose();
     };
   }, []);
+  
   
 //  useEffect(() => {
   //   // Themes begin
@@ -164,14 +179,14 @@ const divright = useRef(null);
 
 
 
-<h1 className='font-san font-extrabold text-5xl md:text-6xl text-[#9ACD32] text-center mt-6'>Tokenomics</h1>
+<h1 className='font-merry text-5xl md:text-6xl text-[#9C7509] text-center mt-6 '>Tokenomics</h1>
 <div className="flex flex-col lg:flex-row w-full h-auto space-y-10 lg:space-y-0 font-san lg:space-x-20 justify-center items-center">
   {/* <CanvasScene /> */}
 
-  <div className="w-full lg:w-3/6 p-6 lg:p-12 font-times h-full">
-    <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white text-center lg:text-left mb-6 break-words">
+  <div className="w-full lg:w-3/6 p-6  font-times h-full">
+    {/* <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white text-center lg:text-left mb-6 break-words">
       Token Distribution
-    </h1>
+    </h1> */}
     <div className="space-y-6">
     {/* Token Items */}
     {[
@@ -184,14 +199,14 @@ const divright = useRef(null);
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             {/* Bullet Point */}
-            <span className="w-2.5 h-2.5 bg-white rounded-full"></span>
-            <p className="text-sm sm:text-base lg:text-xl font-extrabold text-white underline">
+            {/* <span className="w-2.5 h-2.5 bg-white rounded-full"></span> */}
+            <p className="text-sm sm:text-base font-merry lg:text-xl text-white font-bold">
               {item.title}
             </p>
           </div>
-          <p className="text-sm sm:text-base lg:text-lg text-white">{item.percentage}</p>
+          <p className="text-sm sm:text-base font-merry lg:text-lg text-white font-bold">{item.percentage}</p>
         </div>
-        <p className="text-sm sm:text-base lg:text-lg text-white mt-2 break-words">{item.description}</p>
+        <p className="text-sm sm:text-base lg:text-lg text-white mt-2 font-merry break-words">{item.description}</p>
         <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
           <div
             className="bg-[#4C443F] h-1 rounded-full"
@@ -209,15 +224,16 @@ const divright = useRef(null);
       className="w-full sm:w-4/6 lg:w-2/3 h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden sm:ml-20 font-times"
       style={{ minHeight: "250px" }}
     ></div>
+    {/* <PieChart /> */}
 
-    <div className="mt-4 flex flex-wrap justify-center items-start gap-4 text-center">
+    <div className="mt-4 flex flex-wrap justify-center font-roboto items-start gap-4 text-center">
       {chartData.map((item, index) => (
         <div key={index} className="flex items-center gap-2 text-sm lg:text-base">
           <span
             className="w-4 h-4 inline-block rounded-full"
             style={{ backgroundColor: item.color }}
           ></span>
-          <span className="text-white">{item.country}: {item.litres}</span>
+          <span className="text-white">{item.country}: {item.percentage}</span>
         </div>
       ))}
     </div>
@@ -236,16 +252,17 @@ const divright = useRef(null);
         { title: "Burning", percentage: "16%", description: "160,000 tokens will be burned periodically to enhance the token’s scarcity and value.", width: "16%" },
         { title: "Future Development & Marketing", percentage: "6%", description: "60,000 tokens reserved for development and marketing initiatives.", width: "6%" },
       ].map((item, index) => (
-        <div key={index}>
+        <div className='mb-16' key={index}>
           <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 bg-white rounded-full"></span>
-            <p className="text-sm sm:text-base lg:text-xl font-extrabold text-white underline">
+            {/* <span className="w-2.5 h-2.5 bg-white rounded-full"></span> */}
+            <p className="text-sm sm:text-base lg:text-xl text-white font-merry font-bold">
               {item.title}
             </p>
           </div>
+          <p className="text-sm sm:text-base font-merry lg:text-lg text-white font-bold">{item.percentage}</p>
           </div>
-          <p className="text-sm sm:text-base lg:text-lg text-white mt-2 break-words">{item.description}</p>
+          <p className="text-sm sm:text-base lg:text-lg text-white font-merry mt-2 break-words">{item.description}</p>
           <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
             <div
               className="bg-[#4C443F] h-1 rounded-full"

@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <DefaultLayout>
         <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-gray-500">Dashboard</h1>
+        {/* <h1 className="text-2xl font-semibold dark:text-[#F1BE11]">Dashboard</h1> */}
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
-              <span className="rounded-lg mb-4 border border-white bg-white dark:bg-[#D2D8E1] dark:border-[#D2D8E1] px-8 py-2 text-center text-sm font-medium text-black  focus:outline-none focus:ring-4 ">
+              <span className="rounded-lg mb-4 border border-black bg-black dark:bg-white dark:border-white px-8 py-2 text-center text-sm font-medium text-black  focus:outline-none focus:ring-4 ">
                 {/* <Link href={"/auth/signup"} className="">
                 SignUp / SignIn
                 </Link> */}

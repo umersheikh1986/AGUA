@@ -8,7 +8,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 });
 
 const options = {
-  colors: ["#3C50E0", "#80CAEE"],
+  colors: ["#DFDFDF", "#F1BE11"],
   chart: {
     fontFamily: "Satoshi, sans-serif",
     type: "bar",
@@ -97,7 +97,7 @@ const ChartTwo = () => {
   ];
 
   return (
-    <div className="col-span-12 rounded-xl border border-stroke bg-[#D2D8E1] p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
+    <div className="col-span-12 rounded-xl border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>
           <h4 className="text-xl font-semibold text-black dark:text-white">

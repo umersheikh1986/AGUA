@@ -45,12 +45,12 @@ const brandData = [
 
 const TableOne = () => {
   return (
-    <div className="rounded-xl border border-stroke bg-[#D2D8E1] px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
-      <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
+    <div className="rounded-xl border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+      <h4 className="mb-6 text-xl font-semibold text-black dark:text-[#F1BE11]">
       </h4>
 
       <div className="flex flex-col">
-        <div className="grid grid-cols-3 rounded-sm border border-x-[#D2D8E1] border-t-[#D2D8E1] dark:text-white border-b-[#242C36] dark:border-x-boxdark dark:border-t-boxdark dark:border-b-white dark:bg-boxdark sm:grid-cols-5">
+        <div className="grid grid-cols-3 rounded-sm border border-x-[#D2D8E1] border-t-[#D2D8E1] dark:text-[#F1BE11] border-b-[#242C36] dark:border-x-boxdark dark:border-t-boxdark dark:border-b-white dark:bg-boxdark sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
               Source
@@ -91,25 +91,25 @@ const TableOne = () => {
               <div className="flex-shrink-0">
                 <Image src={brand.logo} alt="Brand" width={48} height={48} />
               </div>
-              <p className="hidden text-black dark:text-white sm:block">
+              <p className="hidden text-black dark:text-[#F1BE11] sm:block">
                 {brand.name}
               </p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-black dark:text-white">{brand.visitors}K</p>
+              <p className="text-black dark:text-[#F1BE11]">{brand.visitors}K</p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-meta-3">${brand.revenues}</p>
+              <p className="dark:text-[#F1BE11]">${brand.revenues}</p>
             </div>
 
             <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-              <p className="text-black dark:text-white">{brand.sales}</p>
+              <p className="text-black dark:text-[#F1BE11]">{brand.sales}</p>
             </div>
 
             <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-              <p className="text-meta-5">{brand.conversion}%</p>
+              <p className="dark:text-[#F1BE11]">{brand.conversion}%</p>
             </div>
           </div>
         ))}

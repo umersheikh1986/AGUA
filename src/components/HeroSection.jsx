@@ -76,29 +76,29 @@ return () => {
   {/* <CanvasScene /> */}
   <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow">
     <div ref={divleft} className="flex w-5/6 flex-col justify-center p-10 md:ml-20 rounded-lg  md:mt-10">
-      <h2 className="text-xl sm:text-4xl text-white mb-2 font-san">
+      <h2 className="text-xl sm:text-4xl text-white mb-2 font-roboto">
       Empowering Decentralized Finance with the Stability of Precious
       </h2>
       <h2 className="text-xl sm:text-4xl text-white font-bold mb-2">
       </h2>
-      <h2 className="text-lg sm:text-3xl font-semibold text-yellow-600 font-san">
+      <h2 className="text-lg sm:text-3xl font-semibold text-yellow-600 font-roboto">
         <span className="text-[#c9cbcc] text-lg sm:text-3xl ">Metals and</span> DAO for community.
       </h2>
 
-      <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed font-san">
+      <p className="text-sm sm:text-md md:text-lg text-gray-200 leading-relaxed font-roboto">
       Welcome to AGUA – A New Era of Financial Security. A stablecoin fully backed by silver and gold, seamlessly integrating into the world of decentralized finance (DeFi).
       </p>
 
       <div className="mt-5 flex flex-wrap md:flex-nowrap gap-2 sm:gap-4">
   <Link
     href={"/"}
-    className="border-2 font-san px-6 sm:px-10 md:px-20 py-1 sm:py-4 bg-black text-white sm:font-semibold rounded-sm hover:bg-gray-800 cursor-pointer whitespace-nowrap"
+    className="border-2 font-roboto px-6 sm:px-10 md:px-20 py-1 sm:py-4 bg-black text-white sm:font-semibold rounded-sm hover:bg-gray-800 cursor-pointer whitespace-nowrap"
   >
     Mint Now
   </Link>
   <Link
     href={"/"}
-    className="border-2 border-white font-san bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-6 sm:px-10 md:px-20 py-1 sm:py-4 text-black sm:font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+    className="border-2 border-white font-roboto bg-gradient-to-r from-[#353535] via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply px-6 sm:px-10 md:px-20 py-1 sm:py-4 text-black sm:font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
   >
     Explore AGUA
   </Link>

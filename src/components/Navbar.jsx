@@ -35,9 +35,9 @@ export default function Navbar  ()  {
           {/* Logo Section */}
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Link href="/">
-            <img src="/Agua-new-logo.png" className="h-12 w-12 md:h-20 md:w-20 lg:pr-4 sm:mr-0" alt="Flowbite Logo" />
+            <img src="/Agua-newlogo.png" className="h-12 w-12 md:h-16 md:w-20 lg:pr-4 sm:mr-0" alt="Flowbite Logo" />
             </Link>
-            <span className="self-center text-xl md:text-2xl font-semibold text-white">
+            <span className="self-center text-xl font-merry md:text-2xl font-semibold text-white">
               Agua
             </span>
           </div>
@@ -47,7 +47,7 @@ export default function Navbar  ()  {
           <Link
           onClick={signinNav}
       href={"/"}
-      className="mr-2 rounded-md bg-gradient-to-r from-[#353535] font-times  via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply lg:py-3 lg:px-10 py-3 px-3 text-black-2 font-semibold hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
+      className="mr-2 rounded-md bg-gradient-to-r from-[#353535] font-roboto  via-[#CBCDCF] via-30% to-[#6C6C6C] to-70% bg-blend-multiply lg:py-3 lg:px-10 py-3 px-3 text-black-2 font-semibold hover:bg-[#fad55a] cursor-pointer whitespace-nowrap"
     >
       SignIn
     </Link>
@@ -59,7 +59,7 @@ export default function Navbar  ()  {
           padding: "px-2 lg:px-10 py-2 lg:py-4",
           color: "black", // text-black
           fontWeight: "600",
-          fontFamily: "Orbitron",
+          fontFamily: "Roboto",
           borderRadius: "0.25rem", // rounded-sm
           cursor: "pointer", // cursor-pointer
           whiteSpace: "nowrap", // whitespace-nowrap
@@ -108,7 +108,7 @@ export default function Navbar  ()  {
             } md:flex items-center justify-between w-full md:w-auto md:order-1`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 text-white text-lg rounded-lg  md:flex-row md:mt-0 md:border-0 md:space-x-8 rtl:space-x-reverse">
+            <ul className="flex flex-col font-roboto p-4 mt-4 font-medium border border-gray-100 text-white text-lg rounded-lg  md:flex-row md:mt-0 md:border-0 md:space-x-8 rtl:space-x-reverse">
               <li>
                 <Link
                   href="/"

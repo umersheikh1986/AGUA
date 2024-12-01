@@ -341,8 +341,8 @@ const divrig = useRef(null);
           <div className="flex justify-center items-center -mt-16">
             <img className="h-16 w-16 sm:h-20 sm:w-20" src="https://agcoin.io/wp-content/uploads/2021/03/opportunity.png" alt="Opportunity" />
           </div>
-          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-times">OPPORTUNITY</h2>
-          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-times">
+          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-merry">OPPORTUNITY</h2>
+          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-roboto">
           AGUA blends the stability of silver and gold with DeFi innovation, offering secure wealth preservation and access to lending, staking, and yield farming. Fully backed by precious metals, users can trade, earn rewards, and shape the platform’s future in a transparent, accessible ecosystem.
 
           </p>
@@ -357,8 +357,8 @@ const divrig = useRef(null);
           <div className="flex justify-center items-center -mt-16">
             <img className="h-16 w-16 sm:h-20 sm:w-20" src="https://agcoin.io/wp-content/uploads/2021/03/goal.png" alt="Technology" />
           </div>
-          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-times">TECHNOLOGY</h2>
-          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-times">
+          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-merry">TECHNOLOGY</h2>
+          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-roboto">
           AGUA uses advanced blockchain technology to offer a secure, transparent platform for minting and managing silver and gold-backed tokens. With integrated DeFi features like lending, staking, and trading, users can engage in a trusted, decentralized ecosystem. Real-time reserve audits and DAO governance ensure transparency, security, and community-driven growth.
           </p>
         </div>
@@ -372,8 +372,8 @@ const divrig = useRef(null);
           <div className="flex justify-center items-center -mt-16">
             <img className="h-16 w-16 sm:h-20 sm:w-20" src="https://agcoin.io/wp-content/uploads/2021/03/global.png" alt="Application" />
           </div>
-          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-times">APPLICATION</h2>
-          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-times">
+          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-merry">APPLICATION</h2>
+          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-roboto">
           The AGUA platform allows users to easily manage digital assets, mint silver and gold-backed tokens, and engage in DeFi activities like staking, lending, and trading. With real-time reserve tracking and governance tools, it empowers secure, transparent wealth management.
           </p>
         </div>
@@ -387,8 +387,8 @@ const divrig = useRef(null);
           <div className="flex justify-center items-center -mt-16">
             <img className="h-16 w-16 sm:h-20 sm:w-20" src="https://agcoin.io/wp-content/uploads/2021/03/utility.png" alt="Structure" />
           </div>
-          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-times">STRUCTURE</h2>
-          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-times">
+          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-merry">STRUCTURE</h2>
+          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-roboto">
           AGUA's decentralized structure is powered by blockchain, ensuring transparency and security. Each AG and AU token is 60/40 backed by silver and gold, with smart contracts managing minting, transactions, and audits. DAO governance allows users to shape the platform, ensuring stability and a user-driven ecosystem.
           </p>
         </div>
@@ -402,8 +402,8 @@ const divrig = useRef(null);
           <div className="flex justify-center items-center -mt-16">
             <img className="h-16 w-16 sm:h-20 sm:w-20" src="https://agcoin.io/wp-content/uploads/2021/03/legal.png" alt="Legal" />
           </div>
-          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-times">LEGAL</h2>
-          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-times">
+          <h2 className="text-white text-lg sm:text-xl text-center mt-4 font-merry">LEGAL</h2>
+          <p className="text-gray-300 text-xs lg:text-sm text-center mt-2 font-roboto">
             Swiss-based jurisdiction backed by experienced legal advisors with a feasible structure according to the new Swiss DLT Act.
           </p>
         </div>

@@ -136,7 +136,9 @@ module.exports = {
                                },
                                fontFamily: {
                                 // times: ['"Orbitron"', 'serif'],
-                                san: "Orbitron, sans-serif"
+                                san: "Orbitron, sans-serif",
+                                merry: "Merriweather, serif",
+                                roboto: "Roboto",
                                },
                                backgroundImage: {
                                  spark: "url('/bgs.png')",

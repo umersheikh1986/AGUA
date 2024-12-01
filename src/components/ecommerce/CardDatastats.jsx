@@ -9,7 +9,7 @@ const CardDataStats = ({
   children,
 }) => {
   return (
-    <div className="rounded-xl border border-stroke bg-[#D2D8E1] px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="rounded-xl border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2  dark:bg-meta-4">
         {children}
       </div>
@@ -19,19 +19,19 @@ const CardDataStats = ({
           <h4 className="text-title-md font-bold text-black dark:text-white">
             {total}
           </h4>
-          <span className="text-sm font-medium dark:text-white">{title}</span>
+          <span className="text-sm font-medium dark:text-[#F1BE11]">{title}</span>
         </div>
 
         <span
           className={`flex items-center gap-1 text-sm font-medium ${
-            levelUp && "text-meta-3"
-          } ${levelDown && "text-meta-5"} `}
+            levelUp && "text-[#F1BE11]"
+          } ${levelDown && "text-[#F1BE11]"} `}
         >
           {rate}
 
           {levelUp && (
             <svg
-              className="fill-meta-3"
+              className="fill-[#F1BE11]"
               width="10"
               height="11"
               viewBox="0 0 10 11"
@@ -46,7 +46,7 @@ const CardDataStats = ({
           )}
           {levelDown && (
             <svg
-              className="fill-meta-5"
+              className="fill-[#F1BE11]"
               width="10"
               height="11"
               viewBox="0 0 10 11"

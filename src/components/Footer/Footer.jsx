@@ -18,7 +18,7 @@ import CanvasScene from "../Animate";
                 />
               </a>
               {/* <p className=" px-2 text-3xl font-semibold ">Agua</p> */}
-              <p className="mt-2">
+              <p className="mt-2 font-roboto">
                 {" "}
                 Discover the power of our<br /> secure and
                 rewarding<br /> Credit Cards
@@ -26,10 +26,10 @@ import CanvasScene from "../Animate";
             </div>
             <div className="grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-6 ">
               <div>
-                <h2 className="mb-6 font-semibold   text-lg text-white ">
+                <h2 className="mb-6 font-semibold font-merry  text-lg text-white ">
                   About us
                 </h2>
-                <ul className=" text-white text-base font-medium">
+                <ul className=" text-white font-roboto text-base font-medium">
                   <li className="mb-4">
                     <a href="https://flowbite.com/" className="hover:underline">
                       Investors
@@ -62,8 +62,8 @@ import CanvasScene from "../Animate";
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6  font-semibold   text-lg ">Products</h2>
-                <ul className=" font-medium">
+                <h2 className="mb-6  font-semibold font-merry  text-lg ">Products</h2>
+                <ul className=" font-medium font-roboto">
                   <li className="mb-4 ">
                     <a
                       href="https://github.com/themesberg/flowbite"
@@ -99,10 +99,10 @@ import CanvasScene from "../Animate";
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6  font-semibold   text-lg ">
+                <h2 className="mb-6  font-semibold  font-merry text-lg ">
                   Usefull Links
                 </h2>
-                <ul className="   font-medium">
+                <ul className="font-roboto font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
                       Free Rewards
@@ -121,8 +121,8 @@ import CanvasScene from "../Animate";
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6  font-semibold  text-lg   ">Social</h2>
-                <ul className=" dark:text-white font-medium">
+                <h2 className="mb-6  font-semibold  text-lg  font-merry ">Social</h2>
+                <ul className=" dark:text-white font-roboto font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
                       Change Log
