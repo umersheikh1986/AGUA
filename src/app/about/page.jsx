@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import '../../styles/globals.css'
-import '../docs/style.css'
+import './style.css'
 import Navbar from '../../components/Navbar'
 
 function page() {
