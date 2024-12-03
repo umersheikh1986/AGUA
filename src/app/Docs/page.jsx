@@ -3,15 +3,15 @@ import React from 'react';
 import './style.css';
 import '../../styles/globals.css';
 import Footer from "../../components/Footer/Footer" ;
-import Navb from "../../components/Navb";
+import Navbar from "../../components/Navbar";
 
 function page() {
   return (
     <>
-    <Navb />
+    <Navbar />
     <div class="download-section">
-  <h1 class="card-heading mt-35">Audit Report</h1>
-  <div class="download-content">
+  <h1 class="card-heading font-merry mt-35">Audit Report</h1>
+  <div class="download-content font-roboto">
     <h2>Ready to Download?</h2>
     <p>Click the button below to get your file instantly!</p>
     <a href="/path/to/your/file.pdf" download class="download-button">

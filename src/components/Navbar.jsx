@@ -22,7 +22,7 @@ export default function Navbar  ()  {
     router.push("../about");
   };
   const handleNavigatione = () => {
-    router.push("../Docs");
+    router.push("../docs");
   };
   const handleNav = () => {
     router.push("../")
@@ -37,7 +37,7 @@ export default function Navbar  ()  {
             <Link href="/">
             <img src="/Agua-newlogo.png" className="h-12 w-12 md:h-16 md:w-20 lg:pr-4 sm:mr-0" alt="Flowbite Logo" />
             </Link>
-            <span className="self-center text-xl font-merry md:text-2xl font-semibold text-white">
+            <span className="self-center text-xl font-merry md:text-2xl font-semibold hover:text-[#AF820E] text-[#5C5D5E]">
               Agua
             </span>
           </div>
@@ -108,11 +108,11 @@ export default function Navbar  ()  {
             } md:flex items-center justify-between w-full md:w-auto md:order-1`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col font-roboto p-4 mt-4 font-medium border border-gray-100 text-white text-lg rounded-lg  md:flex-row md:mt-0 md:border-0 md:space-x-8 rtl:space-x-reverse">
+            <ul className="flex flex-col font-roboto p-4 mt-4 font-medium border border-gray-100 text-[#5C5D5E] text-xl rounded-lg  md:flex-row md:mt-0 md:border-0 md:space-x-8 rtl:space-x-reverse">
               <li>
                 <Link
                   href="/"
-                  className="block py-2 px-3"
+                  className="block py-2 px-3 hover:text-[#AF820E]"
                   onClick={handleNav}
                 >
                   Home
@@ -120,8 +120,8 @@ export default function Navbar  ()  {
               </li>
               <li>
                 <Link
-                  href="/Audit"
-                  className="block py-2 px-3"
+                  href="/about"
+                  className="block py-2 px-3 hover:text-[#AF820E]"
                   onClick={handleNavigation}
                 >
                  About
@@ -129,8 +129,8 @@ export default function Navbar  ()  {
               </li>
               <li>
                 <Link
-                  href="/whitePaper"
-                  className="block py-2 px-3"
+                  href="/docs"
+                  className="block py-2 px-3 hover:text-[#AF820E]"
                   onClick={handleNavigatione}
                 >
                  Docs
@@ -139,7 +139,7 @@ export default function Navbar  ()  {
               <li>
                 <Link
                   href="/trade"
-                  className="block py-2 px-3"
+                  className="block py-2 px-3 hover:text-[#AF820E]"
                   onClick={handleLinkClick}
                 >
                   Ecosystem

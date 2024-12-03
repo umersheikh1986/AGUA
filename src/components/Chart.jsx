@@ -18,13 +18,13 @@ const loadAmCharts = async () => {
 
 function Chart() {
   const chartData = [
-    { country: "Private sale", percentage: "5%", color: "#edb318" },
-    { country: "Pancake Swap", percentage: "6%", color: "#cf9b10" },
-    { country: "Future Development And Marketing", percentage: "6%", color: "#9e760b" },
-    { country: "Team Allocation", percentage: "7%", color: "#664c07" },
-    { country: "Pre-sale", percentage: "10%", color: "#473504" },
-    { country: "Burning", percentage: "16%", color: "#BEBEBE" },
-    { country: "Reward For Ecosystem", percentage: "50%", color: "#717171" },
+    { country: "Private sale", percentage: "5%", color: "#C0C0C0" },
+    { country: "Pancake Swap", percentage: "6%", color: "#E5E4E2" },
+    { country: "Future Development And Marketing", percentage: "6%", color: "#B76E79" },
+    { country: "Team Allocation", percentage: "7%", color: "#F7E7CE" },
+    { country: "Pre-sale", percentage: "10%", color: "#CD7F32" },
+    { country: "Burning", percentage: "16%", color: "#B8B8B8" },
+    { country: "Reward For Ecosystem", percentage: "50%", color: "#FFD700" },
   ];
   
   useEffect(() => {
@@ -241,11 +241,11 @@ const divright = useRef(null);
 
 
   {/* Text Section */}
-  <div className="w-full lg:w-3/6 p-6 lg:p-12 font-times h-full">
+  <div className="w-full lg:w-3/6 p-6 font-times h-full">
     {/* <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-white text-center lg:text-left mb-6 break-words">
       Token Distribution
     </h1> */}
-    <div className="space-y-6">
+    <div className="space-y-22">
       {/* Token Items */}
       {[
         { title: "Team Allocation", percentage: "7%", description: "70,000 tokens are allocated to the team with vesting schedules aligned with long-term success.", width: "7%" },

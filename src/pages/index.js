@@ -13,6 +13,7 @@ import Followus from "../components/Followus";
 import Stepper from "../components/stepper";
 import Timeline from "../components/timeline";
 import Link from "next/link";
+import Pictures from "../components/Pictures";
 import Chart from "../components/Chart";
 import Distribution from "../components/Distribution";
 import RoadmapSection from "../components/Distribution";
@@ -62,6 +63,8 @@ export default function Home() {
         <CanvasScene />
         <HeroSection />
         <CanvasScene />
+        <Pictures />
+        <CanvasScene />
         <ThreeCard />
         <CanvasScene />
     
@@ -85,7 +88,7 @@ export default function Home() {
   }
 `}</style>
       <CanvasScene />
-      <Youtube />
+      {/* <Youtube /> */}
       <CanvasScene />
       {/* <Distribution /> */}
       {/* <Timeline /> */}

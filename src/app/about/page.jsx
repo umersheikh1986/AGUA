@@ -1,13 +1,13 @@
 "use client";
 import React from 'react'
 import '../../styles/globals.css'
-import Navb from '../../components/Navb'
-import '../Docs/style.css'
+import '../docs/style.css'
+import Navbar from '../../components/Navbar'
 
 function page() {
   return (
     <>
-    <Navb />
+    <Navbar />
     <div className='download-section'>
       <div>
         <h1 className='text-center text-4xl font-times font-bold'>What is AGUA?</h1>

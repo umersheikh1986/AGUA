@@ -177,7 +177,7 @@ const divrig = useRef(null);
   </div>
 </div>
 
-<div ref={divleft} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
+{/* <div ref={divleft} className="card bg-[#493E1D] w-64 h-80 md:h-[450px] md:w-96 shadow-xl">
   <figure>
     <img
       src="https://agcoin.io/wp-content/uploads/2021/03/bryan-photo-e1616786841161.jpg"
@@ -205,7 +205,7 @@ const divrig = useRef(null);
     </h2>
     <p className='text-white text-center text-base md:text-xl'>Legal Avisor</p>
   </div>
-</div>
+</div> */}
 
 
 

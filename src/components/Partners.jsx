@@ -1,6 +1,7 @@
 import React from 'react'
 import CanvasScene from './Animate'
 import { useEffect,useRef } from 'react';
+import Pictures from './Pictures';
 
 function Partners() {
   const divleft = useRef(null);
@@ -62,6 +63,7 @@ function Partners() {
     {/* <CanvasScene /> */}
     {/* <hr className='border-[#D2BA57] mt-10 w-4/5 mx-auto' /> */}
     <div className='sm:flex font-san justify-center gap-8 sm:gap-20 sm:pt-32 sm:pl-8 pl-20'>
+       {/* <Pictures /> */}
         <img ref={divleft} className='w-32 h-4 mt-32'  src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/02/190213-DALAW-Logo-final-300x45-1.png" alt="" />
         <img ref={divright} className='mb-12' src="https://n1t.301.myftpupload.com/wp-content/uploads/2021/02/1571559684225.png" alt="" />
     </div>

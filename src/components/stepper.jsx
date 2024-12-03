@@ -28,13 +28,13 @@ const Stepper = () => {
 
                             <div class="education-content">
 
-                                <div class="content">
+                                <div style={{height:'240px'}} class="content">
 
                                     {/* <div class="year"> <FaCalendarAlt className='icon' />2019-2024</div> */}
 
                                     <h3 className='text-2xl'  >Phase 1: Foundation and Whitepaper Finalization (Q3 2024)</h3>
 
-                                    <p>
+                                    <p className='mt-6'>
                                     <input
           type="checkbox"
           defaultChecked
