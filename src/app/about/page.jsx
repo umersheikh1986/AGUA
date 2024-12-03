@@ -1,14 +1,14 @@
 "use client";
 import React from 'react'
-// import '../../styles/globals.css'
-// import '../docs/style.css'
+import '../../styles/globals.css'
+import '../docs/style.css'
 import Navbar from '../../components/Navbar'
 
 function page() {
   return (
     <>
     <Navbar />
-    {/* <div className='download-section'>
+    <div className='download-section'>
       <div>
         <h1 className='text-center text-4xl font-times font-bold'>What is AGUA?</h1>
         <div className='flex'>
@@ -16,7 +16,7 @@ function page() {
         <h1 className='text-center text-base font-times'>Through its unique design, AGUA not only serves as a stable store of value but also opens doors to a thriving ecosystem of DeFi opportunities, including staking, lending, and trading. Governed by a decentralized autonomous organization (DAO), AGUA ensures that its community is at the heart of decision-making, making it a truly user-driven platform.</h1>
         </div>
       </div>
-    </div> */}
+    </div>
     </>
   )
 }
